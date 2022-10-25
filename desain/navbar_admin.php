@@ -6,7 +6,7 @@
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                    <h1 class="h3 mb-2 text-gray-800">DESA PARE GRESIK</h1>
+                    <h1 class="h3 mb-2 text-gray-800">DESA BILAPORAH</h1>
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <div class="topbar-divider d-none d-sm-block"></div>

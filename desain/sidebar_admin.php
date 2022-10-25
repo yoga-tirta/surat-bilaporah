@@ -49,10 +49,10 @@
                 <div id="reservasi" class="collapse" aria-labelledby="headingReservasi" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Menu</h6>
-                        <a class="collapse-item" href="../admin/diterima.php">Pengajuan Di Terima</a>
+                        <!-- <a class="collapse-item" href="../admin/diterima.php">Pengajuan Di Terima</a>
                         <a class="collapse-item" href="../admin/ditolak.php">Pengajuan Di Tolak</a>
                         <a class="collapse-item" href="../admin/revisi.php">Pengajuan Revisi</a>
-                        <a class="collapse-item" href="../admin/semua_pengajuan.php">Riwayat Pengajuan</a>
+                        <a class="collapse-item" href="../admin/semua_pengajuan.php">Riwayat Pengajuan</a> -->
                     </div>
                 </div>
             </li>
@@ -66,8 +66,8 @@
                 <div id="surat" class="collapse" aria-labelledby="headingsurat" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Pilihan</h6>
-                        <a class="collapse-item" href="../admin/surat_masuk.php">Surat Masuk </a>
-                        <a class="collapse-item" href="../admin/surat_keluar.php">Surat Keluar </a>
+                        <!-- <a class="collapse-item" href="../admin/surat_masuk.php">Surat Masuk </a>
+                        <a class="collapse-item" href="../admin/surat_keluar.php">Surat Keluar </a> -->
                     </div>
                 </div>
             </li>
