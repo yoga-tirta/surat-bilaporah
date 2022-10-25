@@ -27,15 +27,14 @@
       </div>
 
       <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Hubungi Kami</h4>
-            <p>
-              Jl. Bilaporah N0.3 <br>
-              Socah, Bangkalan<br>
-              Jawa Timur <br><br>
-              <strong>Phone:</strong> +62 851 5892 5522<br>
-              <strong>Email:</strong> admindesabilaporah@gmail.com<br>
-            </p>
-
+        <h4>Hubungi Kami</h4>
+        <p>
+          Jl. Bilaporah N0.3 <br>
+          Socah, Bangkalan<br>
+          Jawa Timur <br><br>
+          <strong>Phone:</strong> +62 851 5892 5522<br>
+          <strong>Email:</strong> admindesabilaporah@gmail.com<br>
+        </p>
       </div>
 
       <div class="col-lg-3 col-md-6 footer-info">

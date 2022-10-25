@@ -16,7 +16,7 @@ $nama = $tb_user["nama_user"];
     <title>Admin | Dashboard</title>
     <link href="../css/sb-admin-2.min.css" rel="stylesheet">
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="../assets/img/gresik.png" rel="icon">
+    <link href="../assets/img/desa.png" rel="icon">
     <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
@@ -256,7 +256,7 @@ $nama = $tb_user["nama_user"];
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>Copyright copy; Safari Hotel 2021</span>
+                <span>&copy; Copyright 2022 by <a href="#">Desa Bilaporah</a></span>
             </div>
         </div>
     </footer>

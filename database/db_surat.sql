@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 28, 2022 at 03:33 AM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 8.0.9
+-- Generation Time: Oct 25, 2022 at 04:21 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.0.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -230,7 +230,7 @@ CREATE TABLE `tb_surat` (
 INSERT INTO `tb_surat` (`kode_surat`, `jenis_surat`, `surat_keluar`) VALUES
 ('SKK', 'Surat Keterangan Kematian', 0),
 ('SKM', 'Surat Keterangan Menikah', 0),
-('SKTM', 'Surat Keterangan Tidak Mamapu', 1),
+('SKTM', 'Surat Keterangan Tidak Mampu', 1),
 ('SL', 'Surat Lainnya', 0),
 ('SM', 'Surat Masuk', 0),
 ('SPA', 'Surat Pengantar Akta', 0),
@@ -271,12 +271,12 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`nik`, `username`, `password`, `nama_user`, `rt`, `rw`, `role_user`) VALUES
-('1112233', 'yoga', '123', 'Yoga Tirta Permana', '1', '2', 'Warga'),
-('11224433', NULL, '', 'Tegar Fakhruddin', '2', '2', 'Warga'),
-('12345', 'fanani', '123', 'Ahmad Fanani', '1', '2', 'Warga'),
-('1234567', 'ahmad', '123', 'Ahmad Rosyihuddin', '2', '1', 'Warga'),
-('12345678', NULL, '', 'Kharisma Intan Safitri', '2', '3', 'Warga'),
-('admin', 'admin', 'admin', 'admin', '', '', 'Admin');
+('1234567', 'yoga', 'yoga', 'Yoga Tirta Permana', '2', '1', 'Warga'),
+('3516175403020001', 'yoena', 'yoena', 'Yoena Rindu Perdana', '1', '2', 'Warga'),
+('3517126003020002', 'dilla', 'dilla', 'Ovadilla Aisyah Rahma', '1', '2', 'Warga'),
+('3526022106010002', NULL, '', 'Kevin Agung J Mahendra', '2', '3', 'Warga'),
+('3578130104020002', NULL, '', 'Chendy Tri Wardani', '2', '2', 'Warga'),
+('admin', 'admin', 'admin', 'Admin Pertama', '', '', 'Admin');
 
 --
 -- Indexes for dumped tables

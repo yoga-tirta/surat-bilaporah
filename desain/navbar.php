@@ -27,13 +27,9 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <!-- <li><a href="../user/home.php">Home</a></li>
+          <li><a href="../user/home.php">Home</a></li>
           <li><a href="../user/riwayat.php">Riwayat</a></li>
           <li><a href="../user/jadwal.php">Jadwal Kerja</a></li>
-          <li><a href="../proses_login/session_logout.php">Log-Out</a></li> -->
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Riwayat</a></li>
-          <li><a href="#">Jadwal Kerja</a></li>
           <li><a href="../proses_login/session_logout.php">Log-Out</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
