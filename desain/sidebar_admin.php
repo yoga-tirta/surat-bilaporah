@@ -16,7 +16,8 @@
             <li class="nav-item active">
                 <a class="nav-link" href="../admin/page_admin.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Dashboard</span>
+                </a>
             </li>
 
             <!-- Divider -->
@@ -35,7 +36,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Pilihan</h6>
                         <a class="collapse-item" href="../admin/user.php">Akun User</a>
-                        <a class="collapse-item" href="../admin/warga.php">Data Warga</a>
+                        <!-- <a class="collapse-item" href="../admin/warga.php">Data Warga</a> -->
                     </div>
                 </div>
             </li>

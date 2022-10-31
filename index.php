@@ -73,7 +73,7 @@ if (isset($_SESSION['nik'])) {
 
 
       <div class="logo">
-        <h1><a href="index.php"> Kelurahan Desa Bilaporah</a></h1>
+        <h1><a href="index.php"> Kantor Desa Bilaporah</a></h1>
 
         <!-- Uncomment below if you prefer to use an image logo -->
       </div>
@@ -102,7 +102,7 @@ if (isset($_SESSION['nik'])) {
             <img src="assets/img/desa.png" alt="" class="img-fluid" style="width: 27%; margin-left: 5%">
             <div class="carousel-content">
               <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Kesekretariatan Desa Bilaporah</span></h2>
-              <p class="animate__animated animate__fadeInUp">Kesekretariatan Desa Bilaporah bertugas untuk melayani warga masyarakat Bilaporah dalam mengurus surat menyurat. Sistem kami terintegrasi secara online sebagai perwujuan pelayanan Pemerintah Desa Bilaporah demi mensukseskan era Digital</p>
+              <p class="animate__animated animate__fadeInUp"><b>Kesekretariatan Desa Bilaporah</b> bertugas untuk melayani masyarakat Desa Bilaporah dalam mengurus surat menyurat. Sistem pelayanan pengajuan surat kami telah terintegrasi secara online sebagai perwujuan pelayanan Pemerintah Desa Bilaporah untuk turut serta mendukung era Digital</p>
               <a href="proses_login/login.php" class="btn-get-started animate__animated animate__fadeInUp">Ajukan Surat</a>
             </div>
           </div>

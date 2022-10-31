@@ -62,7 +62,7 @@
         <h1 style="text-align: center; margin-top: -100px; margin-left: 130px; margin-bottom: 40px;" > Layanan Surat Online Pemerintah Desa Bilapora</h1>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-md-0">
             <a href="../form_input/form_sktm.php?kode_surat=SKTM" style="color:black">
               <div class="icon-box">
                 <div class="icon"><i class="bx bxl-dribbble"></i></div>
@@ -73,21 +73,21 @@
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <a href="../form_input/form_akta.php?kode_surat=SPA" style="color:black">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4>Surat Pengantar Akta</h4>
-                <p>Pengajuan Surat Pengantar Akta Desa Bilaporah</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <a href="../form_input/form_kematian.php?kode_surat=SKK" style="color:black">
               <div class="icon-box">
                 <div class="icon"><i class="bx bx-world"></i></div>
                 <h4>Surat Keterangan Kematian</h4>
                 <p>Pengajuan Surat Keterangan Kematian Desa Bilaporah</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <a href="../form_input/form_nikah.php?kode_surat=SKM" style="color:black">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-arch"></i></div>
+                <h4>Surat Keterangan Pernikahan</h4>
+                <p>Pengajuan Surat Keterangan Pernikahan Desa Bilaporah</p>
               </div>
             </a>
           </div>
@@ -103,11 +103,11 @@
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <a href="../form_input/form_nikah.php?kode_surat=SKM" style="color:black">
+            <a href="../form_input/form_akta.php?kode_surat=SPA" style="color:black">
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-arch"></i></div>
-                <h4>Surat Keterangan Menikah</h4>
-                <p>Pengajuan Surat Keterangan Menikah Desa Bilaporah</p>
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4>Surat Pengantar Akta</h4>
+                <p>Pengajuan Surat Pengantar Akta Desa Bilaporah</p>
               </div>
             </a>
           </div>
@@ -115,7 +115,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <a href="../form_input/form_lainnya.php?kode_surat=SL" style="color:black">
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-slideshow"></i></div>
+                <div class="icon"><i class='bx bx-chalkboard'></i></div>
                 <h4>Surat Lainnya</h4>
                 <p>Pengajuan Surat Lainnya Desa Bilaporah</p>
               </div>

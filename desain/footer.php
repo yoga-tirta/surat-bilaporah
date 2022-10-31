@@ -9,10 +9,10 @@
         <h4>Kesekretariatan</h4>
         <ul>
           <li><i class="bx bx-chevron-right"></i> <a href="#">Surat Keterangan Tidak Mampu</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Surat Pengantar Akta</a></li>
           <li><i class="bx bx-chevron-right"></i> <a href="#">Surat Keterangan Kematian</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Surat Keterangan Pernikahan</a></li>
           <li><i class="bx bx-chevron-right"></i> <a href="#">Surat Pengantar KTP</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Surat Keterangan Menikah</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Surat Pengantar Akta</a></li>
         </ul>
       </div>
 
@@ -39,7 +39,7 @@
 
       <div class="col-lg-3 col-md-6 footer-info">
         <h3>Desa Bilaporah</h3>
-        <p>Keskretariatan Desa Bilaporah bertugas untuk melayani warga masyarakat Bilaporah dalam mengurus surat menyurat.</p>
+        <p>Kesekretariatan Desa Bilaporah bertugas untuk melayani masyarakat Desa Bilaporah dalam mengurus surat menyurat secara online.</p>
         <div class="social-links mt-3">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>

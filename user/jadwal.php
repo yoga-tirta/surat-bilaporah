@@ -70,7 +70,7 @@
         <section id="services" class="services">
             <div class="container" style="margin-top: 40PX;">
                 <img src="../assets/img/desa.png" alt="" class="img-fluid" style="width: 10%; margin-top: 15PX; margin-bottom: 15px; margin-left:180px">
-                <h1 style="text-align: center; margin-top: -90px; margin-left: -75px; margin-bottom: 40px; margin-right:-200px"> Jam Kerja Balai Desa</h1>
+                <h1 style="text-align: center; margin-top: -90px; margin-left: -75px; margin-bottom: 40px; margin-right:-200px">Jam Kerja Kantor Desa Bilaporah</h1>
             </div>
             <div class="contaiiner" style="margin:100px; margin-top:100px">
                 <div class="card w-70" style="margin-bottom: 15px;">
@@ -146,5 +146,4 @@
     <script src="../assets/"></script>
 
 </body>
-
 </html>
