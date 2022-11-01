@@ -17,8 +17,8 @@ $nik = $tb_user["nik"]
   <title>Admin | Dashboard</title>
   <link href="../css/sb-admin-2.min.css" rel="stylesheet">
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="../assets/img/gresik.png" rel="icon">
-
+  <link href="../assets/img/desa.png" rel="icon">
+  <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body>

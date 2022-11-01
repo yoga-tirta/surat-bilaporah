@@ -16,7 +16,7 @@ $nama = $tb_user["nama_user"];
     <title>Admin | inputan sktm</title>
     <link href="../css/sb-admin-2.min.css" rel="stylesheet">
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="../assets/img/gresik.png" rel="icon">
+    <link href="../assets/img/desa.png" rel="icon">
     <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
@@ -101,7 +101,6 @@ $nama = $tb_user["nama_user"];
                                 <td rowspan="5">Keperluan</td>
                                 <td>: <?= $data_sktm["keperluan"] ?></td>
                             </tr>
-
                         </tbody>
                     </table>
                 </div>

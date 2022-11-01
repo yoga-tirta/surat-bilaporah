@@ -38,7 +38,7 @@
 
 <body>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <?php include "C:/xampp/htdocs/surat/desain/navbar.php"?>
+  <?php include "../desain/navbar.php"?>
 
   <!-- ======= Hero Section ======= -->
   <?php
@@ -126,7 +126,7 @@
     </section><!-- End Services Section -->
   </main><!-- End #main -->
 
-  <?php include "C:/xampp/htdocs/surat/desain/footer.php" ?>
+  <?php include "../desain/footer.php" ?>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

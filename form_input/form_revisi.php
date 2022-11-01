@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/7edde9a01a.js" crossorigin="anonymous"></script>
 
     <!-- Favicons -->
-    <link href="../assets/img/gresik.png" rel="icon">
+    <link href="../assets/img/desa.png" rel="icon">
     <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
