@@ -8,8 +8,10 @@ while ($row = mysqli_fetch_assoc($tb_user)) :
             <td><?= $row["nik"] ?></td>
             <td><?= $row["username"] ?></td>
             <td><?= $row["nama_user"] ?></td>
-            <td><?= $row["rt"] ?></td>
-            <td><?= $row["rt"] ?></td>
+            <td><?= $row["tempat_lahir"] ?></td>
+            <td><?= $row["tanggal_lahir"] ?></td>
+            <td><?= $row["jenis_kelamin"] ?></td>
+            <td><?= $row["alamat"] ?></td>
             <td>
                 <a href="../edit_data/edit_user.php?nik=<?= $row["nik"] ?>"><button type="button" class="btn btn-primary">Edit</button></a>
                 <a href="../hapus_data/hapus_user.php?nik=<?= $row["nik"] ?>"><button type="button" class="btn btn-danger">Hapus</button></a>

@@ -73,8 +73,10 @@ $nama = $tb_user["nama_user"];
                                 <th>NIK</th>
                                 <th>Username</th>
                                 <th>Nama</th>
-                                <th>RT</th>
-                                <th>RW</th>
+                                <th>Tempat Lahir</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Jenis Kelamin</th>
+                                <th>ALamat</th>
                                 <th>Option</th>
                             </tr>
                         </thead>
@@ -92,7 +94,7 @@ $nama = $tb_user["nama_user"];
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>Copyright &copy; Safari Hotel 2021</span>
+                <span>&copy; Copyright 2022 by <a href="#">Desa Bilaporah</a></span>
             </div>
         </div>
     </footer>

@@ -84,7 +84,15 @@ $nama = $tb_user["nama_user"];
             </div>
         </div>
     </div>
-
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white" style="margin-top:3%">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>&copy; Copyright 2022 by <a href="#">Desa Bilaporah</a></span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
     <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
