@@ -19,12 +19,13 @@ if(isset($_POST["button"])){
   $kewarganegaraan_pasangan = $_POST["kewarganegaraan_pasangan"];
   $nik_user = $_SESSION['nik'];
   $kode_surat = $_GET["kode_surat"];
+  $tgl = $_POST['waktu_pengajuan'];
 
   // set jam asia di jakarta
   date_default_timezone_set('Asia/Jakarta');
   $tgl = date('y-m-d H:i:s'); //mengambil jam dan tgl sekarang
 
-  $tb_pengajuan = mysqli_query($koneksi,"INSERT INTO tb_pengajuan(nik_user, kode_surat, waktu_pengajuan, keperluan, status_pengajuan) VALUES($nik_user,'$kode_surat','$tgl', '$keperluan', 'Menunggu')");
+  $tb_pengajuan = mysqli_query($koneksi,"INSERT INTO tb_pengajuan(nik, kode_surat, tgl_pengajuan, keperluan, status_pengajuan) VALUES($nik_user,'$kode_surat','$tgl', '$keperluan', 'Menunggu')");
   if($tb_pengajuan){
       header("location: ../tambah_data/tambah_skm.php?nama=$nama&gender=$gender&tempat_lahir=$tempat_lahir&tgl_lahir=$tgl_lahir&agama=$agama&status=$status&pekerjaan=$pekerjaan&kewarganegaraan=$kewarganegaraan&alamat=$alamat&nama_pasangan=$nama_pasangan&gender_pasangan=$gender_pasangan&tempat_lahir_pasangan=$tempat_lahir_pasangan&tgl_lahir_pasangan=$tgl_lahir_pasangan&kewarganegaraan_pasangan=$kewarganegaraan_pasangan&kode_surat=$kode_surat&tgl=$tgl");
   }
