@@ -35,8 +35,7 @@
                 <div id="userMenu" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Pilihan</h6>
-                        <a class="collapse-item" href="../admin/user.php">Akun User</a>
-                        <!-- <a class="collapse-item" href="../admin/warga.php">Data Warga</a> -->
+                        <a class="collapse-item" href="../admin/user.php">Daftar User</a>
                     </div>
                 </div>
             </li>

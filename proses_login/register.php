@@ -74,39 +74,106 @@ if (isset($_SESSION['nik'])) {
 
   <!-- End Header -->
     <!-- ======= Hero Section ======= -->
-
-    <section id="hero" style="height:700px">
+    <section id="hero" style="height:850px">
         <div class="fix" style="margin-top: 5%;">
-            <div class="container">
-                <img src="../assets/img/desa.png" alt="" class="img-fluid" style="width: 20%; margin-left: 8%; margin-bottom: 5%;   ">
-                <h4 class="text-center" style="margin-top: -17%; margin-left: 16%; margin-right: -4%">Form Register</h4>
+            <div class="container" style="width: 50%">
+                <img src="../assets/img/desa.png" alt="" class="img-fluid" style="width: 15%; margin-left: 8%; margin-bottom: 10%;   ">
+                <h3 class="text-center" style="margin-top: -17%; margin-left: 16%; margin-right: -4%">Form Register</h3>
                 <hr>
-                <form method="POST">
-                    <div class="form-group">
-                        <label for="" style="margin-bottom: 5px;">NIK</label>
+                <form class="row g-3" method="POST">
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Nomor Induk Kewarganegaraan</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
                             </div>
-                            <input type="text" name="nik" class="form-control" placeholder="Masukan NIK" style="margin-bottom: 5px;">
+                            <input type="text" name="nik" class="form-control" placeholder="Masukkan NIK" style="margin-bottom: 5px;">
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Nama Lengkap</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text " style="height: 38px;"><i class="fas fa-user-check"></i></div>
+                            </div>
+                            <input type="text" name="nama_user" class="form-control" placeholder="Masukkan Nama Lengkap" style="margin-bottom: 5px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="">Tempat Lahir</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text " style="height: 38px;"><i class="fas fa-house-user"></i></div>
+                            </div>
+                            <input type="text" name="tempat_lahir" class="form-control" placeholder="Masukkan Tempat Lahir" style="margin-bottom: 5px;">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="">Tanggal Lahir</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text " style="height: 38px;"><i class="fas fa-calendar"></i></div>
+                            </div>
+                            <input type="date" name="tanggal_lahir" class="form-control" placeholder="Masukkan Tanggal Lahir" style="margin-bottom: 5px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="">Jenis Kelamin</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text " style="height: 38px;"><i class="fas fa-venus-mars"></i></div>
+                            </div>
+                            <select name="gender" id="gender" class="form-select">
+                                <option value="Laki-Laki">Laki-Laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="">Agama</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text " style="height: 38px;"><i class="fas fa-mosque"></i></div>
+                            </div>
+                            <select name="agama" id="agama" class="form-select">
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen Protestan">Kristen Protestan</option>
+                                <option value="Kristen Katolik">Kristen Katolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Buddha">Buddha</option>
+                                <option value="Konghucu">Konghucu</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <div class="form-group">
-                        <label for="" style="margin-bottom: 5px;">Username</label>
+                        <label for="">Alamat</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text " style="height: 38px;"><i class="fas fa-home"></i></div>
+                            </div>
+                            <input type="textarea" name="alamat" class="form-control" placeholder="Masukkan Alamat" style="margin-bottom: 5px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="">Username</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text " style="height: 38px;"><i class="fas fa-user"></i></div>
                             </div>
-                            <input type="text" name="username" class="form-control" placeholder="Masukan Username" style="margin-bottom: 5px;">
+                            <input type="text" name="username" class="form-control" placeholder="Masukkan Username" style="margin-bottom: 5px;">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="" style="margin-bottom: 5px;">Password</label>
+                    <div class="col-md-6">
+                        <label for="">Password</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <div class="input-group-text " style="height: 38px;"><i class="fas fa-user"></i></div>
+                                <div class="input-group-text " style="height: 38px;"><i class="fas fa-lock"></i></div>
                             </div>
-                            <input type="password" name="password" class="form-control" placeholder="Masukan Username" style="margin-bottom: 5px;">
+                            <input type="password" name="password" class="form-control" placeholder="Masukkan Password" style="margin-bottom: 5px;">
                         </div>
                     </div>
                     <?php include "regisAction.php"; ?>

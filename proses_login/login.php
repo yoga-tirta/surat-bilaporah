@@ -86,7 +86,7 @@ if (isset($_SESSION['username'])) {
               <div class="input-group-prepend">
                 <div class="input-group-text " style="height: 38px;"><i class="fas fa-user"></i></div>
               </div>
-              <input type="text" name="username" class="form-control" placeholder="Masukan Username" style="margin-bottom: 5px;">
+              <input type="text" name="username" class="form-control" placeholder="Masukkan Username" style="margin-bottom: 5px;">
             </div>
           </div>
 
@@ -94,9 +94,9 @@ if (isset($_SESSION['username'])) {
             <label for="" style="margin-bottom: 5px;">Password</label>
             <div class="input-group">
               <div class="input-group-prepend">
-                <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
+                <div class="input-group-text " style="height: 38px;"><i class="fas fa-lock"></i></div>
               </div>
-              <input type="password" name="password" class="form-control" placeholder="Masukan Password" style="margin-bottom: 5px;">
+              <input type="password" name="password" class="form-control" placeholder="Masukkan Password" style="margin-bottom: 5px;">
             </div>
           </div>
           

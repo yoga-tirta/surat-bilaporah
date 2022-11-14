@@ -76,7 +76,8 @@ $nama = $tb_user["nama_user"];
                                 <th>Tempat Lahir</th>
                                 <th>Tanggal Lahir</th>
                                 <th>Jenis Kelamin</th>
-                                <th>ALamat</th>
+                                <th>Agama</th>
+                                <th>Alamat</th>
                                 <th>Option</th>
                             </tr>
                         </thead>
