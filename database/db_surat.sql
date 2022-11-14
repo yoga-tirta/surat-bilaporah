@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2022 at 04:21 AM
+-- Generation Time: Nov 14, 2022 at 08:02 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.0.19
 
@@ -39,7 +39,8 @@ CREATE TABLE `tb_arsip_surat` (
 --
 
 INSERT INTO `tb_arsip_surat` (`nomor_surat`, `id_pengajuan`, `file_surat`, `tgl_surat`) VALUES
-('01/SKTM/DesaGluranPloso/06/2022', 45, '45-Ahmad Rosyihuddin-Surat Keterangan Tidak Mamapu.pdf', '2022-06-28');
+('01/SKTM/DesaGluranPloso/06/2022', 45, '45-Yoga Tirta Permana-Surat Keterangan Tidak Mampu.docx', '2022-10-31'),
+('02/SKTM/DesaGluranPloso/10/2022', 47, '47-Yoga Tirta Permana-Surat Keterangan Tidak Mampu.pdf', '2022-10-31');
 
 -- --------------------------------------------------------
 
@@ -62,9 +63,10 @@ CREATE TABLE `tb_pengajuan` (
 --
 
 INSERT INTO `tb_pengajuan` (`id_pengajuan`, `nik`, `kode_surat`, `tgl_pengajuan`, `keperluan`, `jenis_pengajuan`, `status_pengajuan`) VALUES
-(45, '1234567', 'SKTM', '2022-06-28 08:28:33', 'Kuliah', 'Baru', 'Di Terima'),
+(45, '1234567', 'SKTM', '2022-06-28 08:28:33', 'Salah nama\r\n', 'Revisi', 'Revisi Di Terima'),
 (46, '1234567', 'SKTM', '2022-06-28 08:29:23', 'tes', 'Baru', 'Di Tolak'),
-(47, '1234567', 'SKTM', '2022-06-28 08:30:09', 'tesss', 'Baru', 'Menunggu');
+(47, '1234567', 'SKTM', '2022-06-28 08:30:09', 'Nama salah', 'Revisi', 'Menunggu'),
+(48, '1234567', 'SKTM', '2022-11-08 23:08:47', 'Kuliah', 'Baru', 'Menunggu');
 
 -- --------------------------------------------------------
 
@@ -135,7 +137,8 @@ CREATE TABLE `tb_sktm` (
 INSERT INTO `tb_sktm` (`id_pengajuan_sktm`, `kode_surat`, `nama_sktm`, `tempat_lahir_sktm`, `tgl_lahir_sktm`, `gender_sktm`, `status_sktm`, `pekerjaan_sktm`, `alamat_sktm`) VALUES
 (45, '12345', 'SKTM', 'Gresik', '2022-06-28', 'Laki-Laki', 'Belum Kawin', 'Mahasiswa', 'Gresik'),
 (46, '12345', 'SKTM', 'tes', '2022-06-28', 'Laki-Laki', 'tes', 'tes', 'tes'),
-(47, '12345', 'SKTM', 'tesss', '2022-06-28', 'Laki-Laki', 'tesss', 'tesss', 'tesss');
+(47, '12345', 'SKTM', 'tesss', '2022-06-28', 'Laki-Laki', 'tesss', 'tesss', 'tesss'),
+(48, '12345', 'SKTM', 'Mojokerto', '2002-05-05', 'Laki-Laki', 'Belum', 'Mahasiswa', 'Mojokerto');
 
 -- --------------------------------------------------------
 
@@ -230,7 +233,7 @@ CREATE TABLE `tb_surat` (
 INSERT INTO `tb_surat` (`kode_surat`, `jenis_surat`, `surat_keluar`) VALUES
 ('SKK', 'Surat Keterangan Kematian', 0),
 ('SKM', 'Surat Keterangan Menikah', 0),
-('SKTM', 'Surat Keterangan Tidak Mampu', 1),
+('SKTM', 'Surat Keterangan Tidak Mampu', 2),
 ('SL', 'Surat Lainnya', 0),
 ('SM', 'Surat Masuk', 0),
 ('SPA', 'Surat Pengantar Akta', 0),
@@ -250,6 +253,14 @@ CREATE TABLE `tb_surat_masuk` (
   `tgl_surat_masuk` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tb_surat_masuk`
+--
+
+INSERT INTO `tb_surat_masuk` (`nomor_surat`, `nik`, `jenis_surat`, `file_surat`, `tgl_surat_masuk`) VALUES
+('1231231244', 'admin', 'Undangan', '1231231244-Undangan-2022-10-31.pdf', '2022-10-31'),
+('2000412356', 'admin', 'Undangan Acara', '2000412356-Undangan Acara-2022-11-01.pdf', '2022-11-01');
+
 -- --------------------------------------------------------
 
 --
@@ -261,8 +272,11 @@ CREATE TABLE `tb_user` (
   `username` varchar(100) DEFAULT NULL,
   `password` varchar(100) NOT NULL,
   `nama_user` varchar(100) NOT NULL,
-  `rt` char(10) DEFAULT NULL,
-  `rw` char(10) DEFAULT NULL,
+  `tempat_lahir` varchar(100) NOT NULL,
+  `tanggal_lahir` varchar(100) NOT NULL,
+  `gender` varchar(50) NOT NULL,
+  `agama` varchar(50) NOT NULL,
+  `alamat` varchar(255) NOT NULL,
   `role_user` enum('Warga','Admin') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -270,13 +284,14 @@ CREATE TABLE `tb_user` (
 -- Dumping data for table `tb_user`
 --
 
-INSERT INTO `tb_user` (`nik`, `username`, `password`, `nama_user`, `rt`, `rw`, `role_user`) VALUES
-('1234567', 'yoga', 'yoga', 'Yoga Tirta Permana', '2', '1', 'Warga'),
-('3516175403020001', 'yoena', 'yoena', 'Yoena Rindu Perdana', '1', '2', 'Warga'),
-('3517126003020002', 'dilla', 'dilla', 'Ovadilla Aisyah Rahma', '1', '2', 'Warga'),
-('3526022106010002', NULL, '', 'Kevin Agung J Mahendra', '2', '3', 'Warga'),
-('3578130104020002', NULL, '', 'Chendy Tri Wardani', '2', '2', 'Warga'),
-('admin', 'admin', 'admin', 'Admin Pertama', '', '', 'Admin');
+INSERT INTO `tb_user` (`nik`, `username`, `password`, `nama_user`, `tempat_lahir`, `tanggal_lahir`, `gender`, `agama`, `alamat`, `role_user`) VALUES
+('1234567', 'user', 'user', 'User Pertama', 'Bangkalan', '01-01-2000', 'Laki-Laki', '', 'Bangkalan', 'Warga'),
+('3516150505020003', 'yoga', 'yoga', 'Yoga Tirta Permana', 'Mojokerto', '2002-05-05', 'Laki-Laki', 'Islam', 'Mojokerto', 'Warga'),
+('3516175403020001', 'yoena', 'yoena', 'Yoena Rindu Perdana', 'Mojokerto', '', 'Perempuan', '', 'Mojokerto', 'Warga'),
+('3517126003020002', 'dilla', 'dilla', 'Ovadilla Aisyah Rahma', 'Jombang', '', 'Perempuan', '', 'Jombang', 'Warga'),
+('3526022106010002', NULL, '', 'Kevin Agung J Mahendra', 'Bangkalan', '', 'Laki-Laki', '', 'Bangkalan', 'Warga'),
+('3578130104020002', NULL, '', 'Chendy Tri Wardani', 'Surabaya', '', 'Laki-Laki', '', 'Surabaya', 'Warga'),
+('admin', 'admin', 'admin', 'Admin Pertama', 'Bangkalan', '01-01-2000', 'Laki-Laki', '', 'Bangkalan', 'Admin');
 
 --
 -- Indexes for dumped tables
@@ -361,7 +376,7 @@ ALTER TABLE `tb_user`
 -- AUTO_INCREMENT for table `tb_pengajuan`
 --
 ALTER TABLE `tb_pengajuan`
-  MODIFY `id_pengajuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id_pengajuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `tb_skk`
@@ -379,7 +394,7 @@ ALTER TABLE `tb_skm`
 -- AUTO_INCREMENT for table `tb_sktm`
 --
 ALTER TABLE `tb_sktm`
-  MODIFY `id_pengajuan_sktm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id_pengajuan_sktm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `tb_sl`
