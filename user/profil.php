@@ -87,35 +87,35 @@
                             while ($data = mysqli_fetch_array($query)) {
                         ?>
                         <tr>
-                            <td>NIK</td>
+                            <td class="fw-bold">NIK</td>
                             <td><?php echo $data['nik']?></td>
                         </tr>
                         <tr>
-                            <td>Nama Lengkap</td>
+                            <td class="fw-bold">Nama Lengkap</td>
                             <td><?php echo $data['nama_user']?></td>
                         </tr>
                         <tr>
-                            <td>Username</td>
+                            <td class="fw-bold">Username</td>
                             <td><?php echo $data['username']?></td>
                         </tr>
                         <tr>
-                            <td>Tempat Lahir</td>
+                            <td class="fw-bold">Tempat Lahir</td>
                             <td><?php echo $data['tempat_lahir']?></td>
                         </tr>
                         <tr>
-                            <td>Tanggal Lahir</td>
+                            <td class="fw-bold">Tanggal Lahir</td>
                             <td><?php echo $data['tanggal_lahir']?></td>
                         </tr>
                         <tr>
-                            <td>Jenis Kelamin</td>
+                            <td class="fw-bold">Jenis Kelamin</td>
                             <td><?php echo $data['gender']?></td>
                         </tr>
                         <tr>
-                            <td>Agama</td>
+                            <td class="fw-bold">Agama</td>
                             <td><?php echo $data['agama']?></td>
                         </tr>
                         <tr>
-                            <td>Alamat</td>
+                            <td class="fw-bold">Alamat</td>
                             <td><?php echo $data['alamat']?></td>
                         </tr>
                         <?php } ?>
