@@ -79,39 +79,43 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col" colspan="2">Identitas diri</th>
+                                <th scope="col" colspan="2">Identitas Diri</th>
                             </tr>
                         </thead>
-                            <?php
+                        <?php
                             $query = mysqli_query($koneksi, "SELECT * FROM tb_user where nik='$nik'");
                             while ($data = mysqli_fetch_array($query)) {
                         ?>
                         <tr>
-                            <td>NIK </td>
+                            <td>NIK</td>
                             <td><?php echo $data['nik']?></td>
                         </tr>
                         <tr>
-                            <td>nama </td>
+                            <td>Nama Lengkap</td>
                             <td><?php echo $data['nama_user']?></td>
                         </tr>
                         <tr>
-                            <td>tempat lahir </td>
+                            <td>Username</td>
+                            <td><?php echo $data['username']?></td>
+                        </tr>
+                        <tr>
+                            <td>Tempat Lahir</td>
                             <td><?php echo $data['tempat_lahir']?></td>
                         </tr>
                         <tr>
-                            <td>tanggal lahir </td>
+                            <td>Tanggal Lahir</td>
                             <td><?php echo $data['tanggal_lahir']?></td>
                         </tr>
                         <tr>
-                            <td>gender </td>
+                            <td>Jenis Kelamin</td>
                             <td><?php echo $data['gender']?></td>
                         </tr>
                         <tr>
-                            <td>agama </td>
+                            <td>Agama</td>
                             <td><?php echo $data['agama']?></td>
                         </tr>
                         <tr>
-                            <td>alamat </td>
+                            <td>Alamat</td>
                             <td><?php echo $data['alamat']?></td>
                         </tr>
                         <?php } ?>

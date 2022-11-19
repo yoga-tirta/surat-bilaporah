@@ -82,16 +82,16 @@ if (isset($_SESSION['nik'])) {
                 <hr>
                 <form class="row g-3" method="POST">
                     <div class="col-md-6">
-                        <label for="" class="form-label">Nomor Induk Kewarganegaraan</label>
+                        <label for="">Nomor Induk Kewarganegaraan</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
                             </div>
-                            <input type="text" name="nik" class="form-control" placeholder="Masukkan NIK" style="margin-bottom: 5px;">
+                            <input type="number" name="nik" class="form-control" placeholder="Masukkan NIK" style="margin-bottom: 5px;">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="" class="form-label">Nama Lengkap</label>
+                        <label for="">Nama Lengkap</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text " style="height: 38px;"><i class="fas fa-user-check"></i></div>
@@ -154,7 +154,7 @@ if (isset($_SESSION['nik'])) {
                             <div class="input-group-prepend">
                                 <div class="input-group-text " style="height: 38px;"><i class="fas fa-home"></i></div>
                             </div>
-                            <input type="textarea" name="alamat" class="form-control" placeholder="Masukkan Alamat" style="margin-bottom: 5px;">
+                            <input type="text" name="alamat" class="form-control" placeholder="Masukkan Alamat" style="margin-bottom: 5px;">
                         </div>
                     </div>
 
