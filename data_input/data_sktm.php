@@ -57,47 +57,83 @@ $nama = $tb_user["nama_user"];
                             <tr>
                                 <td>1.</td>
                                 <td>Nama Lengkap</td>
-                                <td>: <?= $data_sktm["nama_user"] ?></td>
+                                <td>: <?= $data_sktm["nama_sktm"] ?></td>
                             </tr>
-
                             <tr>
                                 <td>2.</td>
                                 <td>Tempat Lahir</td>
                                 <td>: <?= $data_sktm["tempat_lahir_sktm"] ?></td>
                             </tr>
-
                             <tr>
                                 <td>3.</td>
                                 <td>Tanggal lahir</td>
                                 <td>: <?= $data_sktm["tgl_lahir_sktm"] ?></td>
                             </tr>
-
                             <tr>
                                 <td>4.</td>
                                 <td>jenis kelamin</td>
                                 <td>: <?= $data_sktm["gender_sktm"] ?></td>
                             </tr>
-
                             <tr>
                                 <td>5.</td>
-                                <td>status perkawinan</td>
-                                <td>: <?= $data_sktm["status_sktm"] ?></td>
-                            </tr>
-
-                            <tr>
-                                <td>6.</td>
                                 <td>Pekerjaan</td>
                                 <td>: <?= $data_sktm["pekerjaan_sktm"] ?></td>
                             </tr>
-
                             <tr>
-                                <td>7.</td>
+                                <td>6.</td>
                                 <td>Alamat</td>
                                 <td>: <?= $data_sktm["alamat_sktm"] ?></td>
                             </tr>
-
                             <tr>
-                                <td rowspan="5">8.</td>
+                                <td>7.</td>
+                                <td>NIK Pemohon</td>
+                                <td>: <?= $data_sktm["nik"] ?></td>
+                            </tr>
+                            <tr>
+                                <td colspan='3'>Data Murid</td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Nama Lengkap</td>
+                                <td>: <?= $data_sktm["nama_user"] ?></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Tempat Lahir</td>
+                                <td>: <?= $data_sktm["tempat_lahir_murid"] ?></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Tanggal lahir</td>
+                                <td>: <?= $data_sktm["tgl_lahir_murid"] ?></td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>jenis kelamin</td>
+                                <td>: <?= $data_sktm["gender_murid"] ?></td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>Agama</td>
+                                <td>: <?= $data_sktm["agama"] ?></td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>Murid siswa dari</td>
+                                <td>: <?= $data_sktm["nama_user"] ?></td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>alamat</td>
+                                <td>: <?= $data_sktm["alamat_murid"] ?></td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>NISN</td>
+                                <td>: <?= $data_sktm["nisn"] ?></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5">9.</td>
                                 <td rowspan="5">Keperluan</td>
                                 <td>: <?= $data_sktm["keperluan"] ?></td>
                             </tr>
