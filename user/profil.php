@@ -87,6 +87,10 @@
                             while ($data = mysqli_fetch_array($query)) {
                         ?>
                         <tr>
+                            <td>NIK </td>
+                            <td><?php echo $data['nik']?></td>
+                        </tr>
+                        <tr>
                             <td>nama </td>
                             <td><?php echo $data['nama_user']?></td>
                         </tr>
