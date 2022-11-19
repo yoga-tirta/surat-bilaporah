@@ -79,47 +79,39 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col">Hari</th>
-                                <th scope="col">Buka</th>
-                                <th scope="col">Tutup</th>
+                                <th scope="col" colspan="2">Identitas diri</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Senin</td>
-                                <td>08.00</td>
-                                <td>16.00</td>
-                            </tr>
-                            <tr>
-                                <td>Selasa</td>
-                                <td>08.00</td>
-                                <td>16.00</td>
-                            </tr>
-                            <tr>
-                                <td>Rabu</td>
-                                <td>08.00</td>
-                                <td>16.00</td>
-                            </tr>
-                            <tr>
-                                <td>Kamis</td>
-                                <td>08.00</td>
-                                <td>16.00</td>
-                            </tr>
-                            <tr>
-                                <td>Jum'at</td>
-                                <td>08.00</td>
-                                <td>16.00</td>
-                            </tr>
-                            <tr>
-                                <td>Sabtu</td>
-                                <td>08.00</td>
-                                <td>13.00</td>
-                            </tr>
-                            <tr>
-                                <td>Minggu</td>
-                                <td colspan="2" align="center">Libur</td>
-                            </tr>
-                        </tbody>
+                            <?php
+                            $query = mysqli_query($koneksi, "SELECT * FROM tb_user where nik='$nik'");
+                            while ($data = mysqli_fetch_array($query)) {
+                        ?>
+                        <tr>
+                            <td>nama </td>
+                            <td><?php echo $data['nama_user']?></td>
+                        </tr>
+                        <tr>
+                            <td>tempat lahir </td>
+                            <td><?php echo $data['tempat_lahir']?></td>
+                        </tr>
+                        <tr>
+                            <td>tanggal lahir </td>
+                            <td><?php echo $data['tanggal_lahir']?></td>
+                        </tr>
+                        <tr>
+                            <td>gender </td>
+                            <td><?php echo $data['gender']?></td>
+                        </tr>
+                        <tr>
+                            <td>agama </td>
+                            <td><?php echo $data['agama']?></td>
+                        </tr>
+                        <tr>
+                            <td>alamat </td>
+                            <td><?php echo $data['alamat']?></td>
+                        </tr>
+                        <?php } ?>
+
                     </table>
                 </div>
             </div>
