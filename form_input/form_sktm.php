@@ -168,7 +168,7 @@
             </div>
 
             <div class="form-group">
-              <label for="" style="margin-bottom: 5px;">nisn</label>
+              <label for="" style="margin-bottom: 5px;">NISN</label>
               <div class="input-group">
                 <div class="input-group-prepend">
                   <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>

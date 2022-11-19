@@ -57,37 +57,37 @@ $nama = $tb_user["nama_user"];
                         <tbody>
                             <tr>
                                 <td>1.</td>
-                                <td>Nama ayah</td>
+                                <td>Nama Ayah</td>
                                 <td>: <?= $data_spa["nama_ayah"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>2.</td>
-                                <td>Nama ibu</td>
+                                <td>Nama Ibu</td>
                                 <td>: <?= $data_spa["nama_ibu"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>3.</td>
-                                <td>Jenis kelamin otu</td>
+                                <td>Jenis Kelamin Ortu</td>
                                 <td>: <?= $data_spa["gender"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>4.</td>
-                                <td>Tempat lahir ortu</td>
+                                <td>Tempat Lahir Ortu</td>
                                 <td>: <?= $data_spa["tempat_lahir"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>5.</td>
-                                <td>Tanggal lahir ortu</td>
+                                <td>Tanggal Lahir Ortu</td>
                                 <td>: <?= $data_spa["tgl_lahir"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>6.</td>
-                                <td>Hubungan keluarga</td>
+                                <td>Hubungan Keluarga</td>
                                 <td>: <?= $data_spa["hubungan"] ?></td>
                             </tr>
 
@@ -105,31 +105,31 @@ $nama = $tb_user["nama_user"];
 
                             <tr>
                                 <td>9.</td>
-                                <td>Nama anak</td>
+                                <td>Nama Anak</td>
                                 <td>: <?= $data_spa["nama_anak"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>10.</td>
-                                <td>jenis kelamin anak</td>
+                                <td>Jenis Kelamin Anak</td>
                                 <td>: <?= $data_spa["gender_anak"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>11.</td>
-                                <td>Tempat lahir anak</td>
+                                <td>Tempat Lahir Anak</td>
                                 <td>: <?= $data_spa["tempat_lahir_anak"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>12.</td>
-                                <td>Tanggal lahir anak</td>
+                                <td>Tanggal Lahir Anak</td>
                                 <td>: <?= $data_spa["tgl_lahir_anak"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>13.</td>
-                                <td>Waktu lahir anak</td>
+                                <td>Waktu Lahir Anak</td>
                                 <td>: <?= $data_spa["waktu_lahir_anak"] ?></td>
                             </tr>
 
@@ -149,7 +149,7 @@ $nama = $tb_user["nama_user"];
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>Copyright copy; Safari Hotel 2021</span>
+                <span>&copy; Copyright 2022 by <a href="#">Desa Bilaporah</a></span>
             </div>
         </div>
     </footer>

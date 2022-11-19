@@ -69,13 +69,13 @@ $nama = $tb_user["nama_user"];
 
                             <tr>
                                 <td>3.</td>
-                                <td>Tanggal lahir</td>
+                                <td>Tanggal Lahir</td>
                                 <td>: <?= $data_sl["tgl_lahir"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>4.</td>
-                                <td>jenis kelamin</td>
+                                <td>Jenis Kelamin</td>
                                 <td>: <?= $data_sl["gender"] ?></td>
                             </tr>
 
@@ -173,7 +173,7 @@ $nama = $tb_user["nama_user"];
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>Copyright copy; Safari Hotel 2021</span>
+                <span>&copy; Copyright 2022 by <a href="#">Desa Bilaporah</a></span>
             </div>
         </div>
     </footer>

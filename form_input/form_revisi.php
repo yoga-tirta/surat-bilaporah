@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <input type="hidden" name="id_pengajuan" value="<?= $_GET['id_pengajuan'] ?>">
-                <button type="submit" name="button" class="btn-primary" style="margin-top: 5px;">submit</button>
+                <button type="submit" name="button" class="btn-primary" style="margin-top: 5px;">Submit</button>
             </form>
         </div>
     </div>

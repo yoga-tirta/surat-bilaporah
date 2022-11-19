@@ -74,7 +74,7 @@ $nama = $tb_user["nama_user"];
 
                             <tr>
                                 <td>4.</td>
-                                <td>jenis kelamin</td>
+                                <td>Jenis kelamin</td>
                                 <td>: <?= $data_skm["gender"] ?></td>
                             </tr>
 
@@ -154,7 +154,7 @@ $nama = $tb_user["nama_user"];
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>Copyright copy; Safari Hotel 2021</span>
+                <span>&copy; Copyright 2022 by <a href="#">Desa Bilaporah</a></span>
             </div>
         </div>
     </footer>

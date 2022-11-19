@@ -60,12 +60,11 @@
 
   $nik = $_SESSION['nik'];
 
-  $data_pengajuan = mysqli_query($koneksi, "SELECT tb_pengajuan.id_pengajuan, tb_pengajuan.status_pengajuan, tb_pengajuan.jenis_pengajuan, tb_surat.jenis_surat FROM tb_pengajuan INNER JOIN tb_surat USING(kode_surat) WHERE tb_pengajuan.nik = '$nik'");
+  $data_pengajuan = mysqli_query($koneksi, "SELECT tb_pengajuan.id_pengajuan, tb_pengajuan.status_pengajuan, tb_pengajuan.tgl_pengajuan, tb_pengajuan.jenis_pengajuan, tb_surat.jenis_surat FROM tb_pengajuan INNER JOIN tb_surat USING(kode_surat) WHERE tb_pengajuan.nik = '$nik'");
   // $data_arsip_surat = mysqli_fetch_row(mysqli_query($koneksi, "SELECT * FROM tb_arsip_surat INNER JOIN tb_pengajuan USING(id_pengajuan) INNER JOIN tb_user USING(nik) WHERE tb_user.nik= '$nik'"));
   ?>
 
   <main id="main">
-
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container" style="margin-top: 40PX;">
@@ -81,12 +80,15 @@
           foreach ($data_pengajuan as $row) {
             $id_pengajuan = $row['id_pengajuan'];
             $data_arsip_surat = mysqli_fetch_assoc(mysqli_query($koneksi, "SELECT * FROM tb_arsip_surat INNER JOIN tb_pengajuan USING(id_pengajuan) INNER JOIN tb_user USING(nik) WHERE tb_user.nik= '$nik' and tb_pengajuan.id_pengajuan = $id_pengajuan "));
+            $tanggal = date('Y-m-d', strtotime($row["tgl_pengajuan"]));
             if ($row['status_pengajuan'] == 'Di Terima' || $row['status_pengajuan'] == 'Revisi Di Terima' || $row['status_pengajuan'] == 'Revisi Selesai') {
               if ($data_arsip_surat['file_surat'] != '') {
                 if ($row['jenis_pengajuan'] == 'Baru') { ?>
                   <div class="card w-70" style="margin-bottom: 15px;">
                     <div class="card-body" style="background-color:lavender;">
                       <h5 class="card-title"><?= $row['jenis_surat'] ?></h5>
+                      <p>Tanggal pengajuan : <?php echo $tanggal;   ?></p>
+                      <p>Durasi Pengerjaan Surat : <?php echo $tanggal . " Sampai dengan " . date('Y-m-d', strtotime("+ 3 days", strtotime(($tanggal)))); ?></p>
                       <a href="../surat_keluar/<?= $data_arsip_surat['file_surat'] ?>" class="btn btn-primary">Download</a>
                       <a href="../form_input/form_revisi.php?id_pengajuan=<?= $row['id_pengajuan'] ?>" class="btn btn-primary">Ajukan Revisi</a>
                     </div>
@@ -98,6 +100,8 @@
                         <h5 class="card-title"><?= $row['jenis_surat'] ?></h5>
                         <small>Surat Sedang Di Revisi</small>
                         <h5 class="card-title" style="text-align: right;">Pengajuan Revisi Di Terima </h5>
+                        <p>Tanggal pengajuan : <?php echo $tanggal;   ?></p>
+                        <p>Durasi Pengerjaan Surat : <?php echo $tanggal . " Sampai dengan " . date('Y-m-d', strtotime("+ 3 days", strtotime(($tanggal)))); ?></p>
                         <a href="../surat_keluar/<?= $data_arsip_surat['file_surat'] ?>" class="btn btn-primary">Download</a>
                       </div>
                     </div>
@@ -105,6 +109,8 @@
                     <div class="card w-70" style="margin-bottom: 15px;">
                       <div class="card-body" style="background-color:lavender;">
                         <h5 class="card-title"><?= $row['jenis_surat'] ?></h5>
+                        <p>Tanggal pengajuan : <?php echo $tanggal;   ?></p>
+                        <p>Durasi Pengerjaan Surat : <?php echo $tanggal . " Sampai dengan " . date('Y-m-d', strtotime("+ 3 days", strtotime(($tanggal)))); ?></p>
                         <a href="../surat_keluar/<?= $data_arsip_surat['file_surat'] ?>" class="btn btn-primary">Download</a>
                         <a href="../form_input/form_revisi.php?id_pengajuan=<?= $row['id_pengajuan'] ?>" class="btn btn-primary">Ajukan Revisi</a>
                       </div>
@@ -117,6 +123,9 @@
                     <h5 class="card-title"><?= $row['jenis_surat'] ?></h5>
                     <small>Surat Sedang Dalam Proses Pembuatan</small>
                     <h5 class="card-title" style="text-align: right;">Pengajuan Di Terima </h5>
+                    <p>Tanggal pengajuan : <?php echo $tanggal;   ?></p>
+                    <p>Durasi Pengerjaan Surat : <?php echo $tanggal . " Sampai dengan " . date('Y-m-d', strtotime("+ 3 days", strtotime(($tanggal)))); ?></p>
+                    <small>Nb : Mohon cek secara berkala untuk mengetahui surat telah siap diunduh</small>
                   </div>
                 </div>
               <?php }
@@ -127,6 +136,9 @@
                     <h5 class="card-title"><?= $row['jenis_surat'] ?></h5>
                     <small>Surat Sedang Dalam Proses Pengajuan Mohon Di Tunggu</small>
                     <h5 class="card-title" style="text-align: right;">Proses Pengajuan</h5>
+                    <p>Tanggal pengajuan : <?php echo $tanggal;   ?></p>
+                    <p>Durasi Pengerjaan Surat : <?php echo $tanggal . " Sampai dengan " . date('Y-m-d', strtotime("+ 3 days", strtotime(($tanggal)))); ?></p>
+                    <small>Nb : Mohon cek secara berkala untuk mengetahui surat telah siap diunduh</small>
                   </div>
                 </div>
               <?php } else { ?>
@@ -135,6 +147,8 @@
                     <h5 class="card-title"><?= $row['jenis_surat'] ?></h5>
                     <small>Surat Sedang Dalam Proses Pengajuan Revisi</small>
                     <h5 class="card-title" style="text-align: right;">Proses Pengajuan Revisi </h5>
+                    <p>Tanggal pengajuan : <?php echo $tanggal;   ?></p>
+                    <p>Durasi Pengerjaan Surat : <?php echo $tanggal . " Sampai dengan " . date('Y-m-d', strtotime("+ 3 days", strtotime(($tanggal)))); ?></p>
                     <a href="../surat_keluar/<?= $data_arsip_surat['file_surat'] ?>" class="btn btn-primary">Download</a>
                   </div>
                 </div>
@@ -145,6 +159,7 @@
                   <h5 class="card-title"><?= $row['jenis_surat'] ?></h5>
                   <small>Pengajuan Surat Anda Di Tolak Mohon Memasukkan Data Diri Dengan Benar</small>
                   <h5 class="card-title" style="text-align: right;">Pengajuan Di Tolak</h5>
+                  <p>Tanggal pengajuan : <?php echo $tanggal;   ?></p>
                 </div>
               </div>
             <?php }  ?>

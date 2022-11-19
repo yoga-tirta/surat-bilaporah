@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2022 at 08:02 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.0.19
+-- Waktu pembuatan: 19 Nov 2022 pada 16.18
+-- Versi server: 10.4.25-MariaDB
+-- Versi PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_arsip_surat`
+-- Struktur dari tabel `tb_arsip_surat`
 --
 
 CREATE TABLE `tb_arsip_surat` (
@@ -35,7 +35,7 @@ CREATE TABLE `tb_arsip_surat` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_arsip_surat`
+-- Dumping data untuk tabel `tb_arsip_surat`
 --
 
 INSERT INTO `tb_arsip_surat` (`nomor_surat`, `id_pengajuan`, `file_surat`, `tgl_surat`) VALUES
@@ -45,7 +45,7 @@ INSERT INTO `tb_arsip_surat` (`nomor_surat`, `id_pengajuan`, `file_surat`, `tgl_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_pengajuan`
+-- Struktur dari tabel `tb_pengajuan`
 --
 
 CREATE TABLE `tb_pengajuan` (
@@ -59,19 +59,35 @@ CREATE TABLE `tb_pengajuan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_pengajuan`
+-- Dumping data untuk tabel `tb_pengajuan`
 --
 
 INSERT INTO `tb_pengajuan` (`id_pengajuan`, `nik`, `kode_surat`, `tgl_pengajuan`, `keperluan`, `jenis_pengajuan`, `status_pengajuan`) VALUES
 (45, '1234567', 'SKTM', '2022-06-28 08:28:33', 'Salah nama\r\n', 'Revisi', 'Revisi Di Terima'),
 (46, '1234567', 'SKTM', '2022-06-28 08:29:23', 'tes', 'Baru', 'Di Tolak'),
 (47, '1234567', 'SKTM', '2022-06-28 08:30:09', 'Nama salah', 'Revisi', 'Menunggu'),
-(48, '1234567', 'SKTM', '2022-11-08 23:08:47', 'Kuliah', 'Baru', 'Menunggu');
+(48, '1234567', 'SKTM', '2022-11-08 23:08:47', 'Kuliah', 'Baru', 'Menunggu'),
+(49, '3516150505020003', 'SKM', '2022-11-19 15:09:28', 'menikah', NULL, 'Menunggu'),
+(50, '3516150505020003', 'SKTM', '2022-11-19 16:37:20', 'SKTM', 'Baru', 'Menunggu'),
+(51, '3516150505020003', 'SKTM', '2022-11-19 16:45:17', 'SKTM', 'Baru', 'Menunggu'),
+(52, '3516150505020003', 'SKTM', '2022-11-19 16:45:48', 'SKTM', 'Baru', 'Menunggu'),
+(53, '3516150505020003', 'SKTM', '2022-11-19 16:47:09', 'sktm', 'Baru', 'Menunggu'),
+(54, '3516150505020003', 'SKTM', '2022-11-19 16:47:55', 'sktm', 'Baru', 'Menunggu'),
+(55, '3516150505020003', 'SKTM', '2022-11-19 16:50:43', 'sktm', 'Baru', 'Menunggu'),
+(56, '3516150505020003', 'SKTM', '2022-11-19 17:08:15', 'sktm', 'Baru', 'Menunggu'),
+(57, '3516150505020003', 'SKTM', '2022-11-19 17:10:49', 'sktm', 'Baru', 'Menunggu'),
+(58, '3516150505020003', 'SKTM', '2022-11-19 17:19:52', 'sktm', 'Baru', 'Menunggu'),
+(59, '3516150505020003', 'SKTM', '2022-11-19 17:21:27', 'sktm', 'Baru', 'Menunggu'),
+(60, '3516150505020003', 'SKTM', '2022-11-19 17:24:02', 'jhojbj', 'Baru', 'Menunggu'),
+(61, '3516150505020003', 'SKTM', '2022-11-19 17:30:02', 'knkj', 'Baru', 'Menunggu'),
+(62, '3516150505020003', 'SKTM', '2022-11-19 17:38:46', 'BARU', 'Baru', 'Menunggu'),
+(63, '3516150505020003', 'SKTM', '2022-11-19 17:57:50', 'bjbb', 'Baru', 'Menunggu'),
+(64, '3516150505020003', 'SKTM', '2022-11-19 18:02:47', 'bjbbj', 'Baru', 'Menunggu');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_skk`
+-- Struktur dari tabel `tb_skk`
 --
 
 CREATE TABLE `tb_skk` (
@@ -90,7 +106,7 @@ CREATE TABLE `tb_skk` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_skm`
+-- Struktur dari tabel `tb_skm`
 --
 
 CREATE TABLE `tb_skm` (
@@ -112,10 +128,17 @@ CREATE TABLE `tb_skm` (
   `kewarganegaraan_pasangan_skm` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `tb_skm`
+--
+
+INSERT INTO `tb_skm` (`id_pengajuan_skm`, `kode_surat`, `nama_skm`, `gender_skm`, `tempat_lahir_skm`, `tgl_lahir_skm`, `agama_skm`, `status_skm`, `pekerjaan_skm`, `kewarganegaraan_skm`, `alamat_skm`, `nama_pasangan_skm`, `gender_pasangan_skm`, `tempat_lahir_pasangan_skm`, `tgl_lahir_`, `kewarganegaraan_pasangan_skm`) VALUES
+(49, 'SKM', 'paijo a', 'Laki-Laki', 'Gresik', '2022-11-19', 'Islam', 'belum kawin', 'Mahasiswa', 'Indonesia', 'Jl. Dupak Masigit 5 No.16', 'Putri', 'Perempuan', 'Jombang', '2022-11-19', 'Indonesia');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_sktm`
+-- Struktur dari tabel `tb_sktm`
 --
 
 CREATE TABLE `tb_sktm` (
@@ -125,25 +148,43 @@ CREATE TABLE `tb_sktm` (
   `tempat_lahir_sktm` varchar(20) DEFAULT NULL,
   `tgl_lahir_sktm` date DEFAULT NULL,
   `gender_sktm` varchar(20) DEFAULT NULL,
-  `status_sktm` varchar(50) DEFAULT NULL,
   `pekerjaan_sktm` varchar(50) DEFAULT NULL,
-  `alamat_sktm` varchar(200) DEFAULT NULL
+  `alamat_sktm` varchar(200) DEFAULT NULL,
+  `nama_murid` varchar(50) DEFAULT NULL,
+  `tempat_lahir_murid` varchar(20) DEFAULT NULL,
+  `tgl_lahir_murid` date DEFAULT NULL,
+  `gender_murid` varchar(20) DEFAULT NULL,
+  `agama` varchar(20) DEFAULT NULL,
+  `anak_murid` varchar(20) DEFAULT NULL,
+  `alamat_murid` varchar(20) DEFAULT NULL,
+  `nisn` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_sktm`
+-- Dumping data untuk tabel `tb_sktm`
 --
 
-INSERT INTO `tb_sktm` (`id_pengajuan_sktm`, `kode_surat`, `nama_sktm`, `tempat_lahir_sktm`, `tgl_lahir_sktm`, `gender_sktm`, `status_sktm`, `pekerjaan_sktm`, `alamat_sktm`) VALUES
-(45, '12345', 'SKTM', 'Gresik', '2022-06-28', 'Laki-Laki', 'Belum Kawin', 'Mahasiswa', 'Gresik'),
-(46, '12345', 'SKTM', 'tes', '2022-06-28', 'Laki-Laki', 'tes', 'tes', 'tes'),
-(47, '12345', 'SKTM', 'tesss', '2022-06-28', 'Laki-Laki', 'tesss', 'tesss', 'tesss'),
-(48, '12345', 'SKTM', 'Mojokerto', '2002-05-05', 'Laki-Laki', 'Belum', 'Mahasiswa', 'Mojokerto');
+INSERT INTO `tb_sktm` (`id_pengajuan_sktm`, `kode_surat`, `nama_sktm`, `tempat_lahir_sktm`, `tgl_lahir_sktm`, `gender_sktm`, `pekerjaan_sktm`, `alamat_sktm`, `nama_murid`, `tempat_lahir_murid`, `tgl_lahir_murid`, `gender_murid`, `agama`, `anak_murid`, `alamat_murid`, `nisn`) VALUES
+(45, '12345', 'SKTM', 'Gresik', '2022-06-28', 'Laki-Laki', 'Mahasiswa', 'Gresik', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(46, '12345', 'SKTM', 'tes', '2022-06-28', 'Laki-Laki', 'tes', 'tes', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(47, '12345', 'SKTM', 'tesss', '2022-06-28', 'Laki-Laki', 'tesss', 'tesss', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(48, '12345', 'SKTM', 'Mojokerto', '2002-05-05', 'Laki-Laki', 'Mahasiswa', 'Mojokerto', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(49, '12345', 'Budiono', 'Surabaya', '2022-11-01', 'Laki-laki', 'Mahasiswa', 'Jl. sendiri', 'Andy', 'Surabaya', '2022-11-09', 'Laki-laki', 'islam', 'budiono', 'jl. sendiri', '71236712'),
+(55, 'SKTM', 'Yoga', 'Mojokerto', '2022-11-19', 'Laki-Laki', 'mekanik', 'Jl. Dupak Masigit 5 No.16', 'Ari', 'Mojokerto', '2022-11-19', 'Laki-Laki', '', '', '', '0058619240'),
+(56, 'SKTM', 'Jamal', 'Bandung', '2022-11-19', 'Laki-Laki', 'mekanik', 'Jl asemjaya', 'siti', 'Bandung', '0000-00-00', 'Perempuan', '', '', 'Jl asemjaya', '213141231'),
+(57, 'SKTM', 'safira', 'Gresik', '2022-11-19', 'Perempuan', 'Ibu Rumah Tangga', 'Jl asemjaya', 'danang', 'Gresik', '2022-11-19', 'Laki-Laki', '', '', 'Jl asemjaya', '0058619240'),
+(58, 'SKTM', '', 'Surabaya', '2022-11-19', 'Laki-Laki', 'Ibu Rumah Tangga', 'Jl asemjaya', 'danang', 'Surabaya', '2022-11-19', 'Perempuan', '', '', 'Jl asemjaya', '0058619240'),
+(59, 'SKTM', '', 'Bandung', '2022-11-02', 'Perempuan', 'Ibu Rumah Tangga', 'jlin', 'Ari', 'Bandung', '2022-11-19', 'Perempuan', '', '', 'Jl asemjaya', '0058619240'),
+(60, 'SKTM', '', 'nobp k', '2022-11-19', 'Laki-Laki', 'mekanik', 'Jl asemjaya', 'siti', 'Bandung', '2022-11-19', 'Perempuan', '', '', 'Jl asemjaya', '0058619240'),
+(61, 'SKTM', '', 'Mojokerto', '2022-11-19', 'Perempuan', 'Ibu Rumah Tangga', 'Jl asemjaya', 'Ari', 'Bandung', '2022-11-19', 'Laki-Laki', '', '', 'Jl asemjaya', '0058619240'),
+(62, 'SKTM', '', 'Surabaya', '2022-11-19', 'Perempuan', 'Mahasiswa', 'jl ina', 'danang', 'Bandung', '2030-02-13', 'Perempuan', '', '', 'Jl asemjaya', '0058619240'),
+(63, 'SKTM', '', 'Bandung', '2022-11-19', 'Perempuan', 'Ibu Rumah Tangga', 'Jl. Dupak Masigit 5 No.16', 'danang', 'Bandung', '2002-01-22', 'Laki-Laki', '', '', 'Jl asemjaya', '0058619240'),
+(64, 'SKTM', 'Lisa', 'Bandung', '2003-01-02', 'Perempuan', 'Ibu Rumah Tangga', 'jln jln', 'danang', 'Bandung', '2202-01-01', 'Laki-Laki', '', '', 'Jl asemjaya', '0058619240');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_sl`
+-- Struktur dari tabel `tb_sl`
 --
 
 CREATE TABLE `tb_sl` (
@@ -165,7 +206,7 @@ CREATE TABLE `tb_sl` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_spa`
+-- Struktur dari tabel `tb_spa`
 --
 
 CREATE TABLE `tb_spa` (
@@ -190,7 +231,7 @@ CREATE TABLE `tb_spa` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_spk`
+-- Struktur dari tabel `tb_spk`
 --
 
 CREATE TABLE `tb_spk` (
@@ -217,7 +258,7 @@ CREATE TABLE `tb_spk` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_surat`
+-- Struktur dari tabel `tb_surat`
 --
 
 CREATE TABLE `tb_surat` (
@@ -227,7 +268,7 @@ CREATE TABLE `tb_surat` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_surat`
+-- Dumping data untuk tabel `tb_surat`
 --
 
 INSERT INTO `tb_surat` (`kode_surat`, `jenis_surat`, `surat_keluar`) VALUES
@@ -242,7 +283,7 @@ INSERT INTO `tb_surat` (`kode_surat`, `jenis_surat`, `surat_keluar`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_surat_masuk`
+-- Struktur dari tabel `tb_surat_masuk`
 --
 
 CREATE TABLE `tb_surat_masuk` (
@@ -254,7 +295,7 @@ CREATE TABLE `tb_surat_masuk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_surat_masuk`
+-- Dumping data untuk tabel `tb_surat_masuk`
 --
 
 INSERT INTO `tb_surat_masuk` (`nomor_surat`, `nik`, `jenis_surat`, `file_surat`, `tgl_surat_masuk`) VALUES
@@ -264,7 +305,7 @@ INSERT INTO `tb_surat_masuk` (`nomor_surat`, `nik`, `jenis_surat`, `file_surat`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_user`
+-- Struktur dari tabel `tb_user`
 --
 
 CREATE TABLE `tb_user` (
@@ -281,11 +322,12 @@ CREATE TABLE `tb_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_user`
+-- Dumping data untuk tabel `tb_user`
 --
 
 INSERT INTO `tb_user` (`nik`, `username`, `password`, `nama_user`, `tempat_lahir`, `tanggal_lahir`, `gender`, `agama`, `alamat`, `role_user`) VALUES
 ('1234567', 'user', 'user', 'User Pertama', 'Bangkalan', '01-01-2000', 'Laki-Laki', '', 'Bangkalan', 'Warga'),
+('321398193918391', 'budisatotok', 'budisatotok', 'budi satotok', 'Surabaya', '2022-11-19', 'Laki-Laki', 'Islam', 'jln jln', 'Warga'),
 ('3516150505020003', 'yoga', 'yoga', 'Yoga Tirta Permana', 'Mojokerto', '2002-05-05', 'Laki-Laki', 'Islam', 'Mojokerto', 'Warga'),
 ('3516175403020001', 'yoena', 'yoena', 'Yoena Rindu Perdana', 'Mojokerto', '', 'Perempuan', '', 'Mojokerto', 'Warga'),
 ('3517126003020002', 'dilla', 'dilla', 'Ovadilla Aisyah Rahma', 'Jombang', '', 'Perempuan', '', 'Jombang', 'Warga'),
@@ -298,14 +340,14 @@ INSERT INTO `tb_user` (`nik`, `username`, `password`, `nama_user`, `tempat_lahir
 --
 
 --
--- Indexes for table `tb_arsip_surat`
+-- Indeks untuk tabel `tb_arsip_surat`
 --
 ALTER TABLE `tb_arsip_surat`
   ADD PRIMARY KEY (`nomor_surat`),
   ADD KEY `id_pengajuan` (`id_pengajuan`);
 
 --
--- Indexes for table `tb_pengajuan`
+-- Indeks untuk tabel `tb_pengajuan`
 --
 ALTER TABLE `tb_pengajuan`
   ADD PRIMARY KEY (`id_pengajuan`),
@@ -313,162 +355,162 @@ ALTER TABLE `tb_pengajuan`
   ADD KEY `kode_surat` (`kode_surat`);
 
 --
--- Indexes for table `tb_skk`
+-- Indeks untuk tabel `tb_skk`
 --
 ALTER TABLE `tb_skk`
   ADD PRIMARY KEY (`id_pengajuan_skk`);
 
 --
--- Indexes for table `tb_skm`
+-- Indeks untuk tabel `tb_skm`
 --
 ALTER TABLE `tb_skm`
   ADD PRIMARY KEY (`id_pengajuan_skm`);
 
 --
--- Indexes for table `tb_sktm`
+-- Indeks untuk tabel `tb_sktm`
 --
 ALTER TABLE `tb_sktm`
   ADD PRIMARY KEY (`id_pengajuan_sktm`);
 
 --
--- Indexes for table `tb_sl`
+-- Indeks untuk tabel `tb_sl`
 --
 ALTER TABLE `tb_sl`
   ADD PRIMARY KEY (`id_pengajuan_sl`);
 
 --
--- Indexes for table `tb_spa`
+-- Indeks untuk tabel `tb_spa`
 --
 ALTER TABLE `tb_spa`
   ADD PRIMARY KEY (`id_pengajuan_spa`);
 
 --
--- Indexes for table `tb_spk`
+-- Indeks untuk tabel `tb_spk`
 --
 ALTER TABLE `tb_spk`
   ADD PRIMARY KEY (`id_pengajuan_spk`);
 
 --
--- Indexes for table `tb_surat`
+-- Indeks untuk tabel `tb_surat`
 --
 ALTER TABLE `tb_surat`
   ADD PRIMARY KEY (`kode_surat`);
 
 --
--- Indexes for table `tb_surat_masuk`
+-- Indeks untuk tabel `tb_surat_masuk`
 --
 ALTER TABLE `tb_surat_masuk`
   ADD PRIMARY KEY (`nomor_surat`),
   ADD KEY `nik` (`nik`);
 
 --
--- Indexes for table `tb_user`
+-- Indeks untuk tabel `tb_user`
 --
 ALTER TABLE `tb_user`
   ADD PRIMARY KEY (`nik`),
   ADD UNIQUE KEY `username` (`username`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tb_pengajuan`
+-- AUTO_INCREMENT untuk tabel `tb_pengajuan`
 --
 ALTER TABLE `tb_pengajuan`
-  MODIFY `id_pengajuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id_pengajuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
--- AUTO_INCREMENT for table `tb_skk`
+-- AUTO_INCREMENT untuk tabel `tb_skk`
 --
 ALTER TABLE `tb_skk`
   MODIFY `id_pengajuan_skk` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tb_skm`
+-- AUTO_INCREMENT untuk tabel `tb_skm`
 --
 ALTER TABLE `tb_skm`
-  MODIFY `id_pengajuan_skm` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pengajuan_skm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
--- AUTO_INCREMENT for table `tb_sktm`
+-- AUTO_INCREMENT untuk tabel `tb_sktm`
 --
 ALTER TABLE `tb_sktm`
-  MODIFY `id_pengajuan_sktm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id_pengajuan_sktm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
--- AUTO_INCREMENT for table `tb_sl`
+-- AUTO_INCREMENT untuk tabel `tb_sl`
 --
 ALTER TABLE `tb_sl`
   MODIFY `id_pengajuan_sl` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tb_spa`
+-- AUTO_INCREMENT untuk tabel `tb_spa`
 --
 ALTER TABLE `tb_spa`
   MODIFY `id_pengajuan_spa` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tb_spk`
+-- AUTO_INCREMENT untuk tabel `tb_spk`
 --
 ALTER TABLE `tb_spk`
   MODIFY `id_pengajuan_spk` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `tb_arsip_surat`
+-- Ketidakleluasaan untuk tabel `tb_arsip_surat`
 --
 ALTER TABLE `tb_arsip_surat`
   ADD CONSTRAINT `tb_arsip_surat_ibfk_2` FOREIGN KEY (`id_pengajuan`) REFERENCES `tb_pengajuan` (`id_pengajuan`);
 
 --
--- Constraints for table `tb_pengajuan`
+-- Ketidakleluasaan untuk tabel `tb_pengajuan`
 --
 ALTER TABLE `tb_pengajuan`
   ADD CONSTRAINT `tb_pengajuan_ibfk_1` FOREIGN KEY (`nik`) REFERENCES `tb_user` (`nik`),
   ADD CONSTRAINT `tb_pengajuan_ibfk_2` FOREIGN KEY (`kode_surat`) REFERENCES `tb_surat` (`kode_surat`);
 
 --
--- Constraints for table `tb_skk`
+-- Ketidakleluasaan untuk tabel `tb_skk`
 --
 ALTER TABLE `tb_skk`
   ADD CONSTRAINT `tb_skk_ibfk_1` FOREIGN KEY (`id_pengajuan_skk`) REFERENCES `tb_pengajuan` (`id_pengajuan`);
 
 --
--- Constraints for table `tb_skm`
+-- Ketidakleluasaan untuk tabel `tb_skm`
 --
 ALTER TABLE `tb_skm`
   ADD CONSTRAINT `tb_skm_ibfk_1` FOREIGN KEY (`id_pengajuan_skm`) REFERENCES `tb_pengajuan` (`id_pengajuan`);
 
 --
--- Constraints for table `tb_sktm`
+-- Ketidakleluasaan untuk tabel `tb_sktm`
 --
 ALTER TABLE `tb_sktm`
   ADD CONSTRAINT `tb_sktm_ibfk_1` FOREIGN KEY (`id_pengajuan_sktm`) REFERENCES `tb_pengajuan` (`id_pengajuan`);
 
 --
--- Constraints for table `tb_sl`
+-- Ketidakleluasaan untuk tabel `tb_sl`
 --
 ALTER TABLE `tb_sl`
   ADD CONSTRAINT `tb_sl_ibfk_1` FOREIGN KEY (`id_pengajuan_sl`) REFERENCES `tb_pengajuan` (`id_pengajuan`);
 
 --
--- Constraints for table `tb_spa`
+-- Ketidakleluasaan untuk tabel `tb_spa`
 --
 ALTER TABLE `tb_spa`
   ADD CONSTRAINT `tb_spa_ibfk_1` FOREIGN KEY (`id_pengajuan_spa`) REFERENCES `tb_pengajuan` (`id_pengajuan`);
 
 --
--- Constraints for table `tb_spk`
+-- Ketidakleluasaan untuk tabel `tb_spk`
 --
 ALTER TABLE `tb_spk`
   ADD CONSTRAINT `tb_spk_ibfk_1` FOREIGN KEY (`id_pengajuan_spk`) REFERENCES `tb_pengajuan` (`id_pengajuan`);
 
 --
--- Constraints for table `tb_surat_masuk`
+-- Ketidakleluasaan untuk tabel `tb_surat_masuk`
 --
 ALTER TABLE `tb_surat_masuk`
   ADD CONSTRAINT `tb_surat_masuk_ibfk_1` FOREIGN KEY (`nik`) REFERENCES `tb_user` (`nik`);

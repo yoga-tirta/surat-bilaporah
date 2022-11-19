@@ -66,12 +66,12 @@ $nama = $tb_user["nama_user"];
                             </tr>
                             <tr>
                                 <td>3.</td>
-                                <td>Tanggal lahir</td>
+                                <td>Tanggal Lahir</td>
                                 <td>: <?= $data_sktm["tgl_lahir_sktm"] ?></td>
                             </tr>
                             <tr>
                                 <td>4.</td>
-                                <td>jenis kelamin</td>
+                                <td>Jenis Kelamin</td>
                                 <td>: <?= $data_sktm["gender_sktm"] ?></td>
                             </tr>
                             <tr>
@@ -104,12 +104,12 @@ $nama = $tb_user["nama_user"];
                             </tr>
                             <tr>
                                 <td>3.</td>
-                                <td>Tanggal lahir</td>
+                                <td>Tanggal Lahir</td>
                                 <td>: <?= $data_sktm["tgl_lahir_murid"] ?></td>
                             </tr>
                             <tr>
                                 <td>4.</td>
-                                <td>jenis kelamin</td>
+                                <td>Jenis Kelamin</td>
                                 <td>: <?= $data_sktm["gender_murid"] ?></td>
                             </tr>
                             <tr>
@@ -119,12 +119,12 @@ $nama = $tb_user["nama_user"];
                             </tr>
                             <tr>
                                 <td>6.</td>
-                                <td>Murid siswa dari</td>
+                                <td>Siswa dari</td>
                                 <td>: <?= $data_sktm["nama_user"] ?></td>
                             </tr>
                             <tr>
                                 <td>7.</td>
-                                <td>alamat</td>
+                                <td>Alamat</td>
                                 <td>: <?= $data_sktm["alamat_murid"] ?></td>
                             </tr>
                             <tr>
@@ -147,7 +147,7 @@ $nama = $tb_user["nama_user"];
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>Copyright copy; Safari Hotel 2021</span>
+                <span>Copyright copy; Desa Bilaporah 2022</span>
             </div>
         </div>
     </footer>
