@@ -10,7 +10,10 @@ if (isset($_POST["button"])) {
     $tgl = date('y-m-d H:i:s'); //mengambil jam dan tgl sekarang
 
     $tb_pengajuan = mysqli_query($koneksi, "UPDATE tb_pengajuan SET keperluan = '$keperluan', jenis_pengajuan = 'Revisi', status_pengajuan='Menunggu' where id_pengajuan = '$id_pengajuan'");
+    
     if ($tb_pengajuan) {
         header("location: ../user/riwayat.php");
+    } else {
+        echo 'Gagal';
     }
 }

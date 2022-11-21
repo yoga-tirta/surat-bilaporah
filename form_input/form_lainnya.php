@@ -54,7 +54,6 @@
                 <textarea class="form-control" name="keperluan" rows="3" required></textarea>
             </div>
 
-
             <label for="" style="margin-bottom: 5px;">Nama Lengkap</label>
             <div class="input-group">
               <div class="input-group-prepend">
@@ -62,7 +61,6 @@
               </div>
               <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" style="margin-bottom: 5px;" required>
             </div>
-
           
             <div class="form-group">
               <label for="" style="margin-bottom: 5px;">Tempat Lahir</label>
@@ -82,19 +80,17 @@
               <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tempat Tgl. Lahir" style="margin-bottom: 5px;" required>
             </div>
           
-          
-              <label for="" style="margin-bottom: 5px;">Jenis Kelamin</label>
-              <div class="input-group">
-                  <div class="input-group-prepend">
-                      <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-                    </div>
-                    <select class="form-control form-control" name="gender">
-                        <option selected>Pilih</option>
-                        <option>Laki-Laki</option>
-                        <option>Perempuan</option>
-                    </select>
-                </div>
-
+            <label for="" style="margin-bottom: 5px;">Jenis Kelamin</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
+                  </div>
+                  <select class="form-control form-control" name="gender">
+                      <option selected>Pilih</option>
+                      <option>Laki-Laki</option>
+                      <option>Perempuan</option>
+                  </select>
+              </div>
             
               <label for="" style="margin-bottom: 5px;">Agama</label>
               <div class="input-group">
@@ -103,7 +99,6 @@
                 </div>
                 <input type="text" name="agama" class="form-control" placeholder="Masukan Agama" style="margin-bottom: 5px;" required>
               </div>
-
             
               <label for="" style="margin-bottom: 5px;">Status Perkawinan</label>
               <div class="input-group">
@@ -112,9 +107,7 @@
                 </div>
                 <input type="text" name="status" class="form-control" placeholder="Masukan Status Perkawinan" style="margin-bottom: 5px;" required>
               </div>
-            
-
-            
+        
               <label for="" style="margin-bottom: 5px;">Pekerjaan</label>
               <div class="input-group">
                 <div class="input-group-prepend">
@@ -133,7 +126,6 @@
               </div>
             </div>
 
-
             <div class="form-group">
               <label for="" style="margin-bottom: 5px;">Alamat</label>
               <div class="input-group">
@@ -144,26 +136,6 @@
               </div>
             </div>
 
-
-              <div class="form-group">
-              <label for="" style="margin-bottom: 5px;">Foto KTP</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-                </div>
-                <input type="file" accept="image/*" name="ktp" class="form-control" placeholder="Masukan KTP" style="margin-bottom: 5px;" required>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="" style="margin-bottom: 5px;">Foto KK</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-                </div>
-                <input type="file" accept="image/*" name="kk" class="form-control" placeholder="Masukan KK" style="margin-bottom: 5px;" required>
-              </div>
-            </div>
           <button type="submit" name="button" class="btn-primary" style="margin-top: 5px;">submit</button>
         </form>
       </div>

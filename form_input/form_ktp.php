@@ -93,7 +93,6 @@
                     </select>
                 </div>
 
-
               <label for="" style="margin-bottom: 5px;">Golongan Darah</label>
               <div class="input-group">
                 <div class="input-group-prepend">
@@ -101,7 +100,6 @@
                 </div>
                 <input type="text" name="golongan_darah" class="form-control" placeholder="Masukan Golongan Darah" style="margin-bottom: 5px;" required>
               </div>
-
             
               <label for="" style="margin-bottom: 5px;">Agama</label>
               <div class="input-group">
@@ -110,7 +108,6 @@
                 </div>
                 <input type="text" name="agama" class="form-control" placeholder="Masukan Agama" style="margin-bottom: 5px;" required>
               </div>
-
             
               <label for="" style="margin-bottom: 5px;">Status Perkawinan</label>
               <div class="input-group">
@@ -119,8 +116,6 @@
                 </div>
                 <input type="text" name="status" class="form-control" placeholder="Masukan Status Perkawinan" style="margin-bottom: 5px;" required>
               </div>
-            
-
             
               <label for="" style="margin-bottom: 5px;">Pekerjaan</label>
               <div class="input-group">

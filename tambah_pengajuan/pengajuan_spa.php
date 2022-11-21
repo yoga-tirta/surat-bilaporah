@@ -24,10 +24,12 @@ if(isset($_POST["button"])){
   date_default_timezone_set('Asia/Jakarta');
   $tgl = date('y-m-d H:i:s'); //mengambil jam dan tgl sekarang
 
-  $tb_pengajuan = mysqli_query($koneksi,"INSERT INTO tb_pengajuan(nik, kode_surat, tgl_pengajuan, keperluan, jenis_pengajuan, status_pengajuan) 
-                                                            VALUES($nik_user,'$kode_surat','$tgl', '$keperluan', 'baru','Menunggu')");
+  $tb_pengajuan = mysqli_query($koneksi, "INSERT INTO tb_pengajuan(nik, kode_surat, tgl_pengajuan, keperluan, jenis_pengajuan, status_pengajuan) VALUES($nik_user,'$kode_surat','$tgl', '$keperluan', 'Baru', 'Menunggu')");
+  
   if($tb_pengajuan){
       header("location: ../tambah_data/tambah_spa.php?nama_ayah=$nama_ayah&nama_ibu=$nama_ibu&gender=$gender&agama=$agama&tempat_lahir=$tempat_lahir&tgl_lahir=$tgl_lahir&hubungan=$hubungan&pekerjaan=$pekerjaan&alamat=$alamat&nama_anak=$nama_anak&gender_anak=$gender_anak&tempat_lahir_anak=$tempat_lahir_anak&tgl_lahir_anak=$tgl_lahir_anak&waktu_lahir=$waktu_lahir&kode_surat=$kode_surat&tgl=$tgl");
+  } else {
+    echo 'Gagal';
   }
 }
 ?>

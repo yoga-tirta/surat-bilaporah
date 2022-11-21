@@ -25,11 +25,12 @@ if(isset($_POST["button"])){
   date_default_timezone_set('Asia/Jakarta');
   $tgl = date('y-m-d H:i:s'); //mengambil jam dan tgl sekarang
   
-  $tb_pengajuan = mysqli_query($koneksi,"INSERT INTO tb_pengajuan(nik_user, kode_surat, waktu_pengajuan, keperluan, status_pengajuan) VALUES($nik_user,'$kode_surat','$tgl', '$keperluan', 'Menunggu')");
-  
+  $tb_pengajuan = mysqli_query($koneksi, "INSERT INTO tb_pengajuan(nik, kode_surat, tgl_pengajuan, keperluan, jenis_pengajuan, status_pengajuan) VALUES($nik_user,'$kode_surat','$tgl', '$keperluan', 'Baru', 'Menunggu')");
+
   if($tb_pengajuan){
-    echo 'sukses';
     header("location: ../tambah_data/tambah_spk.php?nama=$nama&tempat_lahir=$tempat_lahir&tgl_lahir=$tgl_lahir&gender=$gender&golongan_darah=$golongan_darah&agama=$agama&status=$status&pekerjaan=$pekerjaan&alamat=$alamat&rt=$rt&rw=$rw&kelurahan=$kelurahan&kecamatan=$kecamatan&kabupaten=$kabupaten&provinsi=$provinsi&kode_surat=$kode_surat&tgl=$tgl");
+  } else {
+    echo 'Gagal';
   }
 }
 ?>
