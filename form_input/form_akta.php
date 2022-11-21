@@ -108,12 +108,12 @@
               <input type="text" name="tempat_lahir" class="form-control" placeholder="Masukan Tempat Lahir" style="margin-bottom: 5px;" required>
             </div>
 
-            <label for="" style="margin-bottom: 5px;">Tgl. Lahir</label>
+            <label for="" style="margin-bottom: 5px;">Tanggal Lahir</label>
             <div class="input-group">
               <div class="input-group-prepend">
                 <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
               </div>
-              <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tempat Tgl. Lahir" style="margin-bottom: 5px;" required>
+              <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tanggal Lahir" style="margin-bottom: 5px;" required>
             </div>
             
             <label for="" style="margin-bottom: 5px;">Hubungan keluarga</label>
@@ -173,15 +173,15 @@
               <div class="input-group-prepend">
                 <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
               </div>
-              <input type="text" name="tempat_lahir_anak" class="form-control" placeholder="Masukan Tempat Tgl. Lahir" style="margin-bottom: 5px;" required>
+              <input type="text" name="tempat_lahir_anak" class="form-control" placeholder="Masukan Tempat Lahir" style="margin-bottom: 5px;" required>
             </div>
 
-            <label for="" style="margin-bottom: 5px;">Tgl. Lahir</label>
+            <label for="" style="margin-bottom: 5px;">Tanggal Lahir</label>
             <div class="input-group">
               <div class="input-group-prepend">
                 <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
               </div>
-              <input type="date" name="tgl_lahir_anak" class="form-control" placeholder="Masukan Tempat Tgl. Lahir" style="margin-bottom: 5px;" required>
+              <input type="date" name="tgl_lahir_anak" class="form-control" placeholder="Masukan Tanggal Lahir" style="margin-bottom: 5px;" required>
             </div>
 
             <label for="" style="margin-bottom: 5px;">Waktu Lahir</label>
@@ -189,7 +189,7 @@
               <div class="input-group-prepend">
                 <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
               </div>
-              <input type="time" name="waktu_lahir" class="form-control" placeholder="Masukan Tempat Tgl. Lahir" style="margin-bottom: 5px;" required>
+              <input type="time" name="waktu_lahir" class="form-control" placeholder="Masukan Waktu Lahir" style="margin-bottom: 5px;" required>
             </div>
 
           <button type="submit" name="button" class="btn-primary" style="margin-top: 5px;">Submit</button>

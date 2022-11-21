@@ -75,7 +75,7 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
                 </div>
-                <input type="date" name="lahir" class="form-control" placeholder="Masukan Tempat Tgl. Lahir" style="margin-bottom: 5px;" required>
+                <input type="date" name="lahir" class="form-control" placeholder="Masukan Tanggal Lahir" style="margin-bottom: 5px;" required>
               </div>
             
               <label for="" style="margin-bottom: 5px;">Jenis Kelamin</label>
@@ -129,7 +129,7 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
                 </div>
-                <input type="date" name="tgl_lahir_murid" class="form-control" placeholder="Masukan Tempat Tgl. Lahir" style="margin-bottom: 5px;" required>
+                <input type="date" name="tgl_lahir_murid" class="form-control" placeholder="Masukan Tanggal Lahir" style="margin-bottom: 5px;" required>
               </div>
             
               <label for="" style="margin-bottom: 5px;">Jenis Kelamin</label>
@@ -173,7 +173,7 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
                 </div>
-                <input type="number" name="nisn" class="form-control" placeholder="Masukan nisn" style="margin-bottom: 5px;" required>
+                <input type="number" name="nisn" class="form-control" placeholder="Masukan NISN" style="margin-bottom: 5px;" required>
               </div>
             </div>
 

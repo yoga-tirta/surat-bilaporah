@@ -74,7 +74,7 @@
             <div class="input-group-prepend">
               <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
             </div>
-            <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tempat Tgl. Lahir" style="margin-bottom: 5px;" required>
+            <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tanggal Lahir" style="margin-bottom: 5px;" required>
           </div>
           
           <label for="" style="margin-bottom: 5px;">Jenis Kelamin</label>
