@@ -18,6 +18,15 @@ $nama = $tb_user["nama_user"];
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="../assets/img/desa.png" rel="icon">
     <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- Grafik -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script>
+        <style type="text/css">
+            .container {
+                width: 50%;
+                margin: 15px auto;
+            }
+        </style>
 </head>
 
 <body>
@@ -72,10 +81,61 @@ $nama = $tb_user["nama_user"];
     ?>
     <!-- Awal Isi Konten -->
     <div class="container-fluid">
-
         <!-- Halaman kepala -->
         <h1 class="h3 mb-2 text-gray-800">Dashboard</h1>
-
+        <!-- Grafik -->
+        <?php
+        $surat_sktm = mysqli_query($koneksi, "SELECT kode_surat FROM tb_pengajuan WHERE kode_surat = 'SKTM' ");
+        $surat_skm = mysqli_query($koneksi, "SELECT kode_surat FROM tb_pengajuan WHERE kode_surat = 'SKM' ");
+        $surat_skk = mysqli_query($koneksi, "SELECT kode_surat FROM tb_pengajuan WHERE kode_surat = 'SKK' ");
+        $surat_spa = mysqli_query($koneksi, "SELECT kode_surat FROM tb_pengajuan WHERE kode_surat = 'SPA' ");
+        $surat_spk = mysqli_query($koneksi, "SELECT kode_surat FROM tb_pengajuan WHERE kode_surat = 'SPK' ");
+        ?>
+        <div class="container">
+            <canvas id="myChart" ></canvas>
+        </div>
+        <script>
+            var ctx = document.getElementById("myChart");
+            var myChart = new Chart(ctx, {
+                // tipe chart
+                type: 'bar',
+                data: {
+                    labels: ['SKTM', 'SKM', 'SKK', 'SPA', 'SPK'],
+                    datasets: [{
+                            label: 'jumlah surat',
+                            data: [
+                                <?php echo mysqli_num_rows($surat_sktm); ?>,
+                                <?php echo mysqli_num_rows($surat_skm);?>,
+                                <?php echo mysqli_num_rows($surat_skk);?>,
+                                <?php echo mysqli_num_rows($surat_spa);?>,
+                                <?php echo mysqli_num_rows($surat_spk);?>,
+                            ],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(14, 262, 135, 0.2)',
+                                'rgba(255, 15, 175, 0.2)',
+                                'rgba(155, 502, 215, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255,99,132,1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                    }
+                }
+            });
+        </script>
         <!-- Content Row -->
         <div class="row">
             <!-- Earnings (Monthly) Card Example -->
