@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Form Keterangan Kematian</title>
+  <title>Form Surat Keterangan Kematian</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,7 +42,7 @@
     <?php include "../desain/navbar.php"?>
     <div class="fix"> 
       <div class="container" style="margin-top: 40px; margin-bottom: 50px;">
-        <h4 class="text-center">Formulir Surat Keterangan Kematian</h4>
+        <h4 class="text-center">Formulir Keterangan Kematian</h4>
         <hr>
         <form action="../tambah_pengajuan/pengajuan_skk.php?kode_surat=SKK" method="POST">
 
@@ -78,6 +78,14 @@
               <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tanggal Lahir" style="margin-bottom: 5px;" required>
             </div>
 
+            <label for="" style="margin-bottom: 5px;">Umur</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
+              </div>
+              <input type="text" name="umur" class="form-control" placeholder="Masukan Umur" style="margin-bottom: 5px;" required>
+            </div>
+
 
               <label for="" style="margin-bottom: 5px;">Jenis Kelamin </label>
               <div class="input-group">
@@ -110,15 +118,22 @@
               </div>
             </div> 
             
-            <div class="form-group">
-              <label for="" style="margin-bottom: 5px;">Hari Meninggal</label>
+            <label for="" style="margin-bottom: 5px;">Hari Meninggal </label>
               <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
+                  <div class="input-group-prepend">
+                      <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
+                    </div>
+                    <select class="form-control form-control" name="hari_meninggal">
+                        <option selected>Pilih</option>
+                        <option>Senin</option>
+                        <option>Selasa</option>
+                        <option>Rabu</option>
+                        <option>Kamis</option>
+                        <option>Jum'at</option>
+                        <option>Sabtu</option>
+                        <option>Minggu</option>
+                      </select>
                 </div>
-                <input type="text" name="hari_meninggal" class="form-control" placeholder="Masukkan Hari Meninggal" style="margin-bottom: 5px;" required>
-              </div>
-            </div> 
             
             <div class="form-group">
               <label for="" style="margin-bottom: 5px;">Tanggal Meninggal</label>
@@ -129,6 +144,16 @@
                 <input type="date" name="tgl_meninggal" class="form-control" placeholder="Masukan Tanggal Meninggal" style="margin-bottom: 5px;" required>
               </div>
             </div>
+
+            <div class="form-group">
+              <label for="" style="margin-bottom: 5px;">Penyebab Kematian</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
+                </div>
+                <input type="text" name="penyebab" class="form-control" placeholder="Masukkan Penyebab kematian" style="margin-bottom: 5px;" required>
+              </div>
+            </div> 
           <button type="submit" name="button" class="btn-primary" style="margin-top: 5px;">submit</button>
         </form>
       </div>
