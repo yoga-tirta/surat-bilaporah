@@ -45,61 +45,59 @@
         <h4 class="text-center">Formulir Keterangan Kematian</h4>
         <hr>
         <form action="../tambah_pengajuan/pengajuan_skk.php?kode_surat=SKK" method="POST">
+          <div class="form-group">
+            <label for="" style="margin-bottom: 5px;">Keperluan</label>
+            <div class="input-group" style="margin-bottom: 5px;">
+              <textarea class="form-control" name="keperluan" rows="3" required></textarea>
+          </div>
 
-            <h3>Data Pribadi</h3>
-            <div class="form-group">
-              <label for="" style="margin-bottom: 5px;">Keperluan</label>
-              <div class="input-group" style="margin-bottom: 5px;">
-                <textarea class="form-control" name="keperluan" rows="3" required></textarea>
+          <br>
+          <h3>Data Meninggal</h3>
+          <label for="" style="margin-bottom: 5px;">Nama Lengkap</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text " style="height: 38px;"><i class="fas fa-user" ></i></div>
+            </div>
+            <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" style="margin-bottom: 5px;" required>
+          </div>
+
+          <label for="" style="margin-bottom: 5px;">Tempat Lahir</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
+            </div>
+            <input type="text" name="tempat_lahir" class="form-control" placeholder="Masukan Tempat Lahir" style="margin-bottom: 5px;" required>
+          </div>
+
+          <label for="" style="margin-bottom: 5px;">Tanggal Lahir</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
+            </div>
+            <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tanggal Lahir" style="margin-bottom: 5px;" required>
+          </div>
+
+          <label for="" style="margin-bottom: 5px;">Umur</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
+            </div>
+            <input type="number" name="umur" class="form-control" placeholder="Masukan Umur" style="margin-bottom: 5px;" required>
+          </div>
+
+          <label for="" style="margin-bottom: 5px;">Jenis Kelamin </label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
+            </div>
+              <select class="form-control form-control" name="gender">
+                <option selected>Pilih</option>
+                <option>Laki-Laki</option>
+                <option>Perempuan</option>
+              </select>
             </div>
 
-            <label for="" style="margin-bottom: 5px;">Nama Lengkap</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text " style="height: 38px;"><i class="fas fa-user" ></i></div>
-              </div>
-              <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" style="margin-bottom: 5px;" required>
-            </div>
-
-            <label for="" style="margin-bottom: 5px;">Tempat Lahir</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-              </div>
-              <input type="text" name="tempat_lahir" class="form-control" placeholder="Masukan Tempat Lahir" style="margin-bottom: 5px;" required>
-            </div>
-
-
-            <label for="" style="margin-bottom: 5px;">Tanggal Lahir</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-              </div>
-              <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tanggal Lahir" style="margin-bottom: 5px;" required>
-            </div>
-
-            <label for="" style="margin-bottom: 5px;">Umur</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-              </div>
-              <input type="text" name="umur" class="form-control" placeholder="Masukan Umur" style="margin-bottom: 5px;" required>
-            </div>
-
-
-              <label for="" style="margin-bottom: 5px;">Jenis Kelamin </label>
-              <div class="input-group">
-                  <div class="input-group-prepend">
-                      <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-                    </div>
-                    <select class="form-control form-control" name="gender">
-                        <option selected>Pilih</option>
-                        <option>Laki-Laki</option>
-                        <option>Perempuan</option>
-                    </select>
-                </div>
-
-            <label for="" style="margin-bottom: 5px;">Pekerjaan </label>
+            <label for="" style="margin-bottom: 5px;">Pekerjaan</label>
             <div class="input-group">
               <div class="input-group-prepend">
                 <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
@@ -107,54 +105,48 @@
               <input type="text" name="pekerjaan" class="form-control" placeholder="Masukkan Pekerjaan" style="margin-bottom: 5px;" required>
             </div>
 
-
-            <div class="form-group">
-              <label for="" style="margin-bottom: 5px;">Alamat</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-                </div>
-                <input type="text" name="alamat" class="form-control" placeholder="Masukkan Alamat" style="margin-bottom: 5px;" required>
+            <label for="" style="margin-bottom: 5px;">Alamat</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
               </div>
+              <input type="text" name="alamat" class="form-control" placeholder="Masukkan Alamat" style="margin-bottom: 5px;" required>
             </div> 
             
-            <label for="" style="margin-bottom: 5px;">Hari Meninggal </label>
-              <div class="input-group">
-                  <div class="input-group-prepend">
-                      <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-                    </div>
-                    <select class="form-control form-control" name="hari_meninggal">
-                        <option selected>Pilih</option>
-                        <option>Senin</option>
-                        <option>Selasa</option>
-                        <option>Rabu</option>
-                        <option>Kamis</option>
-                        <option>Jum'at</option>
-                        <option>Sabtu</option>
-                        <option>Minggu</option>
-                      </select>
-                </div>
-            
-            <div class="form-group">
-              <label for="" style="margin-bottom: 5px;">Tanggal Meninggal</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-                </div>
-                <input type="date" name="tgl_meninggal" class="form-control" placeholder="Masukan Tanggal Meninggal" style="margin-bottom: 5px;" required>
+            <label for="" style="margin-bottom: 5px;">Hari Meninggal</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
               </div>
+              <select class="form-control form-control" name="hari_meninggal">
+                <option selected>Pilih</option>
+                <option>Senin</option>
+                <option>Selasa</option>
+                <option>Rabu</option>
+                <option>Kamis</option>
+                <option>Jum'at</option>
+                <option>Sabtu</option>
+                <option>Minggu</option>
+              </select>
+            </div>
+            
+            <label for="" style="margin-bottom: 5px;">Tanggal Meninggal</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
+              </div>
+              <input type="date" name="tgl_meninggal" class="form-control" placeholder="Masukan Tanggal Meninggal" style="margin-bottom: 5px;" required>
             </div>
 
-            <div class="form-group">
-              <label for="" style="margin-bottom: 5px;">Penyebab Kematian</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-                </div>
-                <input type="text" name="penyebab" class="form-control" placeholder="Masukkan Penyebab kematian" style="margin-bottom: 5px;" required>
+            <label for="" style="margin-bottom: 5px;">Penyebab Kematian</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
               </div>
-            </div> 
-          <button type="submit" name="button" class="btn-primary" style="margin-top: 5px;">submit</button>
+              <input type="text" name="penyebab" class="form-control" placeholder="Masukkan Penyebab kematian" style="margin-bottom: 5px;" required>
+            </div>
+
+          <button type="submit" name="button" class="btn-primary" style="margin-top: 5px;">Submit</button>
         </form>
       </div>
     </div>

@@ -120,7 +120,7 @@ $nama = $tb_user["nama_user"];
                             <tr>
                                 <td>6.</td>
                                 <td>Siswa dari</td>
-                                <td>: <?= $data_sktm["nama_user"] ?></td>
+                                <td>: <?= $data_sktm["nama_sktm"] ?></td>
                             </tr>
                             <tr>
                                 <td>7.</td>
