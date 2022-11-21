@@ -57,80 +57,80 @@ $nama = $tb_user["nama_user"];
                         <tbody>
                             <tr>
                                 <td>1.</td>
-                                <td>Nama Ayah</td>
-                                <td>: <?= $data_spa["nama_ayah"] ?></td>
+                                <td>Nama ayah</td>
+                                <td>: <?= $data_spa["nama_ayah_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>2.</td>
-                                <td>Nama Ibu</td>
-                                <td>: <?= $data_spa["nama_ibu"] ?></td>
+                                <td>Nama ibu</td>
+                                <td>: <?= $data_spa["nama_ibu_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>3.</td>
-                                <td>Jenis Kelamin Ortu</td>
-                                <td>: <?= $data_spa["gender"] ?></td>
+                                <td>Jenis kelamin otu</td>
+                                <td>: <?= $data_spa["gender_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>4.</td>
-                                <td>Tempat Lahir Ortu</td>
-                                <td>: <?= $data_spa["tempat_lahir"] ?></td>
+                                <td>Tempat lahir ortu</td>
+                                <td>: <?= $data_spa["tempat_lahir_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>5.</td>
-                                <td>Tanggal Lahir Ortu</td>
-                                <td>: <?= $data_spa["tgl_lahir"] ?></td>
+                                <td>Tanggal lahir ortu</td>
+                                <td>: <?= $data_spa["tgl_lahir_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>6.</td>
-                                <td>Hubungan Keluarga</td>
-                                <td>: <?= $data_spa["hubungan"] ?></td>
+                                <td>Hubungan keluarga</td>
+                                <td>: <?= $data_spa["hubungan_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>7.</td>
                                 <td>Pekerjaan</td>
-                                <td>: <?= $data_spa["pekerjaan"] ?></td>
+                                <td>: <?= $data_spa["pekerjaan_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>8.</td>
                                 <td>Alamat</td>
-                                <td>: <?= $data_spa["alamat"] ?></td>
+                                <td>: <?= $data_spa["alamat_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>9.</td>
-                                <td>Nama Anak</td>
-                                <td>: <?= $data_spa["nama_anak"] ?></td>
+                                <td>Nama anak</td>
+                                <td>: <?= $data_spa["nama_anak_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>10.</td>
-                                <td>Jenis Kelamin Anak</td>
-                                <td>: <?= $data_spa["gender_anak"] ?></td>
+                                <td>jenis kelamin anak</td>
+                                <td>: <?= $data_spa["gender_anak_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>11.</td>
-                                <td>Tempat Lahir Anak</td>
-                                <td>: <?= $data_spa["tempat_lahir_anak"] ?></td>
+                                <td>Tempat lahir anak</td>
+                                <td>: <?= $data_spa["tempat_lahir_anak_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>12.</td>
-                                <td>Tanggal Lahir Anak</td>
-                                <td>: <?= $data_spa["tgl_lahir_anak"] ?></td>
+                                <td>Tanggal lahir anak</td>
+                                <td>: <?= $data_spa["tgl_lahir_anak_spa"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>13.</td>
-                                <td>Waktu Lahir Anak</td>
-                                <td>: <?= $data_spa["waktu_lahir_anak"] ?></td>
+                                <td>Waktu lahir anak</td>
+                                <td>: <?= $data_spa["waktu_lahir_anak_spa"] ?></td>
                             </tr>
 
                             <tr>
@@ -149,7 +149,7 @@ $nama = $tb_user["nama_user"];
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>&copy; Copyright 2022 by <a href="#">Desa Bilaporah</a></span>
+                <span>Copyright copy; Safari Hotel 2021</span>
             </div>
         </div>
     </footer>

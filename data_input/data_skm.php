@@ -57,85 +57,85 @@ $nama = $tb_user["nama_user"];
                             <tr>
                                 <td>1.</td>
                                 <td>Nama Lengkap</td>
-                                <td>: <?= $data_skm["nama"] ?></td>
+                                <td>: <?= $data_skm["nama_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>2.</td>
                                 <td>Tempat Lahir</td>
-                                <td>: <?= $data_skm["tempat_lahir"] ?></td>
+                                <td>: <?= $data_skm["tempat_lahir_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>3.</td>
                                 <td>Tanggal lahir</td>
-                                <td>: <?= $data_skm["tgl_lahir"] ?></td>
+                                <td>: <?= $data_skm["tgl_lahir_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>4.</td>
-                                <td>Jenis kelamin</td>
-                                <td>: <?= $data_skm["gender"] ?></td>
+                                <td>jenis kelamin</td>
+                                <td>: <?= $data_skm["gender_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>5.</td>
                                 <td>Agama</td>
-                                <td>: <?= $data_skm["agama"] ?></td>
+                                <td>: <?= $data_skm["agama_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>6.</td>
                                 <td>Status perkawinan</td>
-                                <td>: <?= $data_skm["status"] ?></td>
+                                <td>: <?= $data_skm["status_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>7.</td>
                                 <td>Pekerjaan</td>
-                                <td>: <?= $data_skm["pekerjaan"] ?></td>
+                                <td>: <?= $data_skm["pekerjaan_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>8.</td>
                                 <td>Kewarganegaraan</td>
-                                <td>: <?= $data_skm["kewarganegaraan"] ?></td>
+                                <td>: <?= $data_skm["kewarganegaraan_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>9.</td>
                                 <td>Alamat</td>
-                                <td>: <?= $data_skm["alamat"] ?></td>
+                                <td>: <?= $data_skm["alamat_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>10.</td>
                                 <td>Nama pasangan</td>
-                                <td>: <?= $data_skm["nama_pasangan"] ?></td>
+                                <td>: <?= $data_skm["nama_pasangan_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>11.</td>
                                 <td>Jenis kelamin pasangan</td>
-                                <td>: <?= $data_skm["gender_pasangan"] ?></td>
+                                <td>: <?= $data_skm["gender_pasangan_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>12.</td>
                                 <td>Tempat lahir pasangan</td>
-                                <td>: <?= $data_skm["tempat_lahir_pasangan"] ?></td>
+                                <td>: <?= $data_skm["tempat_lahir_pasangan_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>13.</td>
                                 <td>Tanggal lahir pasangan</td>
-                                <td>: <?= $data_skm["tgl_lahir_pasangan"] ?></td>
+                                <td>: <?= $data_skm["tgl_lahir_pasangan_skm"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>14.</td>
                                 <td>Kewarganegaraan pasangan</td>
-                                <td>: <?= $data_skm["kewarganegaraan_lahir_pasangan"] ?></td>
+                                <td>: <?= $data_skm["kewarganegaraan_lahir_pasangan_skm"] ?></td>
                             </tr>
 
                             <tr>
@@ -154,7 +154,7 @@ $nama = $tb_user["nama_user"];
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>&copy; Copyright 2022 by <a href="#">Desa Bilaporah</a></span>
+                <span>Copyright copy; Safari Hotel 2021</span>
             </div>
         </div>
     </footer>
