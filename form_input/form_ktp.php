@@ -200,15 +200,6 @@
               </div>
             </div>
 
-              <div class="form-group">
-              <label for="" style="margin-bottom: 5px;">Pas Foto 3x4</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text " style="height: 38px;"><i class="fas fa-address-card"></i></div>
-                </div>
-                <input type="file" accept="image/*" name="file" class="form-control" placeholder="Masukan Alamat" style="margin-bottom: 5px;" required>
-              </div>
-            </div>
           <button type="submit" name="button" class="btn-primary" style="margin-top: 5px;">submit</button>
         </form>
       </div>
