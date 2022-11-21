@@ -86,8 +86,8 @@
             <a href="../form_input/form_nikah.php?kode_surat=SKM" style="color:black">
               <div class="icon-box">
                 <div class="icon"><i class="bx bx-arch"></i></div>
-                <h4>Surat Keterangan Pernikahan</h4>
-                <p>Pengajuan Surat Keterangan Pernikahan Desa Bilaporah</p>
+                <h4>Surat Keterangan Menikah</h4>
+                <p>Pengajuan Surat Keterangan Menikah Desa Bilaporah</p>
               </div>
             </a>
           </div>
