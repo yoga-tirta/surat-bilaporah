@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Nov 2022 pada 16.18
+-- Waktu pembuatan: 21 Nov 2022 pada 18.08
 -- Versi server: 10.4.25-MariaDB
 -- Versi PHP: 8.1.10
 
@@ -82,7 +82,18 @@ INSERT INTO `tb_pengajuan` (`id_pengajuan`, `nik`, `kode_surat`, `tgl_pengajuan`
 (61, '3516150505020003', 'SKTM', '2022-11-19 17:30:02', 'knkj', 'Baru', 'Menunggu'),
 (62, '3516150505020003', 'SKTM', '2022-11-19 17:38:46', 'BARU', 'Baru', 'Menunggu'),
 (63, '3516150505020003', 'SKTM', '2022-11-19 17:57:50', 'bjbb', 'Baru', 'Menunggu'),
-(64, '3516150505020003', 'SKTM', '2022-11-19 18:02:47', 'bjbbj', 'Baru', 'Menunggu');
+(64, '3516150505020003', 'SKTM', '2022-11-19 18:02:47', 'bjbbj', 'Baru', 'Menunggu'),
+(65, '3516150505020003', 'SKK', '2022-11-21 23:13:31', 'mati', NULL, 'Menunggu'),
+(66, '3516150505020003', 'SKK', '2022-11-21 23:20:08', 'mati', NULL, 'Menunggu'),
+(67, '3516150505020003', 'SKK', '2022-11-21 23:27:51', 'mati', NULL, 'Menunggu'),
+(68, '3516150505020003', 'SKK', '2022-11-21 23:29:06', 'mati', NULL, 'Menunggu'),
+(69, '3516150505020003', 'SKK', '2022-11-21 23:30:30', 'mati', NULL, 'Menunggu'),
+(70, '3516150505020003', 'SKK', '2022-11-21 23:33:56', 'mati', NULL, 'Menunggu'),
+(71, '3516150505020003', 'SKK', '2022-11-21 23:39:50', 'manusia', NULL, 'Menunggu'),
+(72, '3516150505020003', 'SKK', '2022-11-21 23:42:22', 'manusia', NULL, 'Menunggu'),
+(73, '3516150505020003', 'SKK', '2022-11-21 23:44:15', 'manusia', NULL, 'Menunggu'),
+(74, '3516150505020003', 'SKK', '2022-11-22 00:01:18', 'mati', NULL, 'Menunggu'),
+(75, '3516150505020003', 'SKK', '2022-11-22 00:04:08', 'mati', NULL, 'Menunggu');
 
 -- --------------------------------------------------------
 
@@ -100,8 +111,22 @@ CREATE TABLE `tb_skk` (
   `pekerjaan_skk` varchar(50) DEFAULT NULL,
   `alamat_skk` varchar(200) DEFAULT NULL,
   `hari_meninggal_skk` varchar(10) DEFAULT NULL,
-  `tgl_meninggal_skk` date DEFAULT NULL
+  `tgl_meninggal_skk` date DEFAULT NULL,
+  `penyebab_skk` varchar(20) DEFAULT NULL,
+  `umur_skk` varchar(5) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `tb_skk`
+--
+
+INSERT INTO `tb_skk` (`id_pengajuan_skk`, `kode_surat`, `nama_skk`, `tempat_lahir_skk`, `tgl_lahir_skk`, `gender_skk`, `pekerjaan_skk`, `alamat_skk`, `hari_meninggal_skk`, `tgl_meninggal_skk`, `penyebab_skk`, `umur_skk`) VALUES
+(65, '35161', 'SKK', 'Mojokerto', NULL, 'Laki-Laki', 'Mahasiswa', 'jlin', 'selasa', '2022-11-21', NULL, NULL),
+(71, '35161', 'SKK', 'Kota Surabaya', NULL, 'Laki-Laki', 'mekanik', 'Jl asemjaya', 'selasa', '2022-11-21', NULL, NULL),
+(72, 'SKK', 'paijo a', 'Mojokerto', NULL, 'Laki-Laki', 'Mahasiswa', 'jlin', 'selasa', '2022-11-21', NULL, NULL),
+(73, 'SKK', 'safira', 'lamongan', '2022-11-21', 'Laki-Laki', 'Mahasiswa', 'jln jln', 'selasa', '2022-11-22', NULL, NULL),
+(74, 'SKK', 'budi leksmana', 'Gresik', '2022-11-25', 'Laki-Laki', 'Mahasiswa', 'Jl asemjaya', 'Senin', '2022-11-22', '', ''),
+(75, 'SKK', 'budu', 'Gresik', '2022-11-21', 'Laki-Laki', 'Ibu Rumah Tangga', 'Jl asemjaya', 'Rabu', '2022-11-23', 'Sakit', '18');
 
 -- --------------------------------------------------------
 
@@ -418,13 +443,13 @@ ALTER TABLE `tb_user`
 -- AUTO_INCREMENT untuk tabel `tb_pengajuan`
 --
 ALTER TABLE `tb_pengajuan`
-  MODIFY `id_pengajuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id_pengajuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_skk`
 --
 ALTER TABLE `tb_skk`
-  MODIFY `id_pengajuan_skk` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pengajuan_skk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_skm`

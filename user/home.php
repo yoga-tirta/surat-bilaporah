@@ -92,7 +92,7 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <a href="../form_input/form_ktp.php?kode_surat=SPK" style="color:black">
               <div class="icon-box">
                 <div class="icon"><i class="bx bx-slideshow"></i></div>
@@ -100,7 +100,7 @@
                 <p>Pengajuan Surat Pengantar KTP Desa Bilaporah</p>
               </div>
             </a>
-          </div>
+          </div> -->
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <a href="../form_input/form_akta.php?kode_surat=SPA" style="color:black">
@@ -112,7 +112,7 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <a href="../form_input/form_lainnya.php?kode_surat=SL" style="color:black">
               <div class="icon-box">
                 <div class="icon"><i class='bx bx-chalkboard'></i></div>
@@ -120,7 +120,7 @@
                 <p>Pengajuan Surat Lainnya Desa Bilaporah</p>
               </div>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </section><!-- End Services Section -->
