@@ -57,49 +57,59 @@ $nama = $tb_user["nama_user"];
                             <tr>
                                 <td>1.</td>
                                 <td>Nama Lengkap</td>
-                                <td>: <?= $data_skk["nama"] ?></td>
+                                <td>: <?= $data_skk["nama_skk"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>2.</td>
                                 <td>Tempat Lahir</td>
-                                <td>: <?= $data_skk["tempat_lahir"] ?></td>
+                                <td>: <?= $data_skk["tempat_lahir_skk"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>3.</td>
                                 <td>Tanggal lahir</td>
-                                <td>: <?= $data_skk["tgl_lahir"] ?></td>
+                                <td>: <?= $data_skk["tgl_lahir_skk"] ?></td>
                             </tr>
-
                             <tr>
                                 <td>4.</td>
-                                <td>Jenis kelamin</td>
-                                <td>: <?= $data_skk["gender"] ?></td>
+                                <td>Umur</td>
+                                <td>: <?= $data_skk["umur_skk"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>5.</td>
-                                <td>Pekerjaan</td>
-                                <td>: <?= $data_skk["pekerjaan"] ?></td>
+                                <td>jenis kelamin</td>
+                                <td>: <?= $data_skk["gender_skk"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>6.</td>
-                                <td>Alamat</td>
-                                <td>: <?= $data_skk["alamat"] ?></td>
+                                <td>Pekerjaan</td>
+                                <td>: <?= $data_skk["pekerjaan_skk"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>7.</td>
+                                <td>Alamat</td>
+                                <td>: <?= $data_skk["alamat_skk"] ?></td>
+                            </tr>
+
+                            <tr>
+                                <td>8.</td>
                                 <td>Hari meninggal</td>
-                                <td>: <?= $data_skk["hari_meninggal"] ?></td>
+                                <td>: <?= $data_skk["hari_meninggal_skk"] ?></td>
                             </tr>
 
                             <tr>
                                 <td>8.</td>
                                 <td>Tanggal meinggal</td>
-                                <td>: <?= $data_skk["tgl_meninggal"] ?></td>
+                                <td>: <?= $data_skk["tgl_meninggal_skk"] ?></td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>Penyebab kematian</td>
+                                <td>: <?= $data_skk["penyebab_skk"] ?></td>
                             </tr>
 
                             <tr>
@@ -118,7 +128,7 @@ $nama = $tb_user["nama_user"];
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>&copy; Copyright 2022 by <a href="#">Desa Bilaporah</a></span>
+                <span>Copyright copy; Safari Hotel 2021</span>
             </div>
         </div>
     </footer>
