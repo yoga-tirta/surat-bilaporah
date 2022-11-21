@@ -42,7 +42,7 @@
     <?php include "../desain/navbar.php"?>
     <div class="fix"> 
       <div class="container" style="margin-top: 40px; margin-bottom: 50px;">
-        <h4 class="text-center">Formulir Pengantar KTP</h4>
+        <h4 class="text-center">Formulir Surat Pengantar KTP</h4>
         <hr>
         <form action="../tambah_pengajuan/pengajuan_spk.php?kode_surat=SPK" method="POST" enctype="multipart/form-data">
 

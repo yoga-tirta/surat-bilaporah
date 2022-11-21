@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Form Surat Keterangan Kematian</title>
+  <title>Form Keterangan Kematian</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,7 +42,7 @@
     <?php include "../desain/navbar.php"?>
     <div class="fix"> 
       <div class="container" style="margin-top: 40px; margin-bottom: 50px;">
-        <h4 class="text-center">Formulir Keterangan Kematian</h4>
+        <h4 class="text-center">Formulir Surat Keterangan Kematian</h4>
         <hr>
         <form action="../tambah_pengajuan/pengajuan_skk.php?kode_surat=SKK" method="POST">
 
