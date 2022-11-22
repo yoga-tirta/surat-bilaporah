@@ -36,63 +36,70 @@ $data = mysqli_query($koneksi, "SELECT * FROM tb_user where tb_user.username is 
       <div class="card-body">
         <form action="../proses_data/tambah_user.php" method="POST">
           <div class="form-group row">
-            <label for="input_nama_barang" class="col-sm-2 col-form-label">NIK</label>
+            <label for="" class="col-sm-2 col-form-label">NIK</label>
             <div class="col-md-3">
-              <select type="text" class="form-control" name="nik" placeholder="Masukkan NIK">
-                <?php foreach ($data as $row) : ?>
-                  <option value="<?= $row['nik'] ?>"><?= $row['nik'] ?></option>
-                <?php endforeach ?>
-              </select>
+              <input type="number" class="form-control" name="username" placeholder="Masukkan NIK">
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_nama_barang" class="col-sm-2 col-form-label">Username</label>
+            <label for="" class="col-sm-2 col-form-label">Username</label>
             <div class="col-md-3">
               <input type="text" class="form-control" name="username" placeholder="Masukkan Username">
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_nama_barang" class="col-sm-2 col-form-label">Password</label>
+            <label for="" class="col-sm-2 col-form-label">Password</label>
             <div class="col-md-3">
               <input type="password" class="form-control" name="password" placeholder="Masukkan Password">
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_nama_barang" class="col-sm-2 col-form-label">Nama</label>
+            <label for="" class="col-sm-2 col-form-label">Nama</label>
             <div class="col-md-3">
               <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">Tempat Lahir</label>
+            <label for="" class="col-sm-2 col-form-label">Tempat Lahir</label>
             <div class="col-md-3">
               <input type="text" class="form-control" name="tempat_lahir" placeholder="Masukkan Tempat Lahir">
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+            <label for="" class="col-sm-2 col-form-label">Tanggal Lahir</label>
             <div class="col-md-3">
               <input type="date" class="form-control" name="tanggal_lahir" placeholder="Masukkan Tanggal Lahir">
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+            <label for="" class="col-sm-2 col-form-label">Jenis Kelamin</label>
             <div class="col-md-3">
-              <input type="text" class="form-control" name="gender" placeholder="Pilih">
+              <select name="gender" id="gender" class="form-control">
+                  <option value="Laki-Laki">Laki-Laki</option>
+                  <option value="Perempuan">Perempuan</option>
+              </select>
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">Agama</label>
+            <label for="" class="col-sm-2 col-form-label">Agama</label>
             <div class="col-md-3">
-              <input type="text" class="form-control" name="agama" placeholder="Pilih Agama">
+              <select type="text" class="form-control" name="agama" id="agama">
+                  <option value="Islam">Islam</option>
+                  <option value="Kristen Protestan">Kristen Protestan</option>
+                  <option value="Kristen Katolik">Kristen Katolik</option>
+                  <option value="Hindu">Hindu</option>
+                  <option value="Buddha">Buddha</option>
+                  <option value="Konghucu">Konghucu</option>
+              </select>
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">Alamat</label>
+            <label for="" class="col-sm-2 col-form-label">Alamat</label>
             <div class="col-md-3">
               <input type="text" class="form-control" name="alamat" placeholder="Masukkan Alamat">
             </div>
           </div>
+
           <div class="form-group row">
             <div class="col-sm-10">
               <button type="submit" class="btn btn-primary" name="tambah_data">Tambah</button>
