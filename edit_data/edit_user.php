@@ -64,15 +64,33 @@ $nik = $tb_user["nik"]
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">RT</label>
+            <label for="input_stock_barang" class="col-sm-2 col-form-label">Tempat Lahir</label>
             <div class="col-md-3">
-              <input type="number" class="form-control" name="rt" placeholder="Masukkan RT" value="<?= $data['rt'] ?>">
+              <input type="text" class="form-control" name="tempat_lahir" placeholder="Masukkan Tempat Lahir" value="<?= $data['tempat_lahir'] ?>">
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">RW</label>
+            <label for="input_stock_barang" class="col-sm-2 col-form-label">Tanggal Lahir</label>
             <div class="col-md-3">
-              <input type="number" class="form-control" name="rw" placeholder="Masukkan RW" value="<?= $data['rw'] ?>">
+              <input type="date" class="form-control" name="tanggal_lahir" placeholder="Masukkan Tanggal Lahir" value="<?= $data['tanggal_lahir'] ?>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="input_stock_barang" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" name="gender" placeholder="Pilih" value="<?= $data['gender'] ?>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="input_stock_barang" class="col-sm-2 col-form-label">Agama</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" name="agama" placeholder="Pilih Agama" value="<?= $data['agama'] ?>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="input_stock_barang" class="col-sm-2 col-form-label">Alamat</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" name="alamat" placeholder="Masukkan Alamat" value="<?= $data['alamat'] ?>">
             </div>
           </div>
           <div class="form-group row">
@@ -85,12 +103,12 @@ $nik = $tb_user["nik"]
           if (isset($_SESSION["pesan"])) {
             if ($_SESSION["pesan"] == "sukses") { ?>
               <script>
-                Swal.fire('SUKSES', 'DATA BERHASIL DI RUBAH', 'success')
+                Swal.fire('SUKSES', 'DATA BERHASIL DI UBAH', 'success')
               </script>
             <?php unset($_SESSION["pesan"]);
             } elseif ($_SESSION["pesan"] == "gagal") { ?>
               <script>
-                Swal.fire('ERROR', 'DATA GAGAL DI RUBAH', 'error')
+                Swal.fire('ERROR', 'DATA GAGAL DI UBAH', 'error')
               </script>
           <?php
               unset($_SESSION["pesan"]);
