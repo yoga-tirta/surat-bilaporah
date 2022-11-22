@@ -28,24 +28,24 @@ $nama = $tb_user["nama_user"];
     if (isset($_SESSION["pesan"])) {
         if ($_SESSION["pesan"] == "sukses") { ?>
             <script>
-                Swal.fire('SUKSES', 'BARANG BERHASIL DI HAPUS', 'success')
+                Swal.fire('SUKSES', 'BERHASIL DI HAPUS', 'success')
             </script>
         <?php unset($_SESSION["pesan"]);
         } elseif ($_SESSION["pesan"] == "gagal") { ?>
             <script>
-                Swal.fire('ERROR', 'BARANG GAGAL DI HAPUS ', 'error')
+                Swal.fire('ERROR', 'GAGAL DI HAPUS ', 'error')
             </script>
         <?php
             unset($_SESSION["pesan"]);
         } elseif ($_SESSION["pesan"] == "sukses1") { ?>
             <script>
-                Swal.fire('SUKSES', 'BARANG BERHASIL DI UPDATE ', 'success')
+                Swal.fire('SUKSES', 'BERHASIL DI UPDATE ', 'success')
             </script>
         <?php
             unset($_SESSION["pesan"]);
         } elseif ($_SESSION["pesan"] == "gagal1") { ?>
             <script>
-                Swal.fire('ERROR', 'BARANG GAGAL DI UPDATE', 'error')
+                Swal.fire('ERROR', 'GAGAL DI UPDATE', 'error')
             </script>
     <?php
             unset($_SESSION["pesan"]);
