@@ -9,9 +9,9 @@ $tahun = date('Y');
 $data = mysqli_fetch_assoc(mysqli_query($koneksi, "SELECT COUNT(tb_arsip_surat.nomor_surat) AS nomor FROM tb_arsip_surat"));
 $nomor = (string)$data["nomor"] + 1;
 if (strlen($nomor) == 1) {
-    $nomor_surat = '0' . $nomor . '/' . $kode_surat . '/' . 'DesaGluranPloso' . '/' . $bulan . '/' . $tahun;
+    $nomor_surat = '0' . $nomor . '/' . $kode_surat . '/' . 'DesaBilaporah' . '/' . $bulan . '/' . $tahun;
 } else {
-    $nomor_surat = $nomor . '/' . $kode_surat . '/' . 'DesaGluranPloso' . '/' . $bulan . '/' . $tahun;
+    $nomor_surat = $nomor . '/' . $kode_surat . '/' . 'DesaBilaporah' . '/' . $bulan . '/' . $tahun;
 }
 // var_dump($nomor);
 // die;
