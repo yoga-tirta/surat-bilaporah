@@ -58,6 +58,42 @@ $data = mysqli_query($koneksi, "SELECT * FROM tb_user where tb_user.username is 
             </div>
           </div>
           <div class="form-group row">
+            <label for="input_nama_barang" class="col-sm-2 col-form-label">Nama</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="input_stock_barang" class="col-sm-2 col-form-label">Tempat Lahir</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" name="tempat_lahir" placeholder="Masukkan Tempat Lahir">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="input_stock_barang" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+            <div class="col-md-3">
+              <input type="date" class="form-control" name="tanggal_lahir" placeholder="Masukkan Tanggal Lahir">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="input_stock_barang" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" name="gender" placeholder="Pilih">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="input_stock_barang" class="col-sm-2 col-form-label">Agama</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" name="agama" placeholder="Pilih Agama">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="input_stock_barang" class="col-sm-2 col-form-label">Alamat</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" name="alamat" placeholder="Masukkan Alamat">
+            </div>
+          </div>
+          <div class="form-group row">
             <div class="col-sm-10">
               <button type="submit" class="btn btn-primary" name="tambah_data">Tambah</button>
               <a href="../admin/user.php"><button type="button" class="btn btn-primary" name="batal">Batal</button></a>
