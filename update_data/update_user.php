@@ -6,11 +6,14 @@ $nama = $_POST["nama"];
 $username = $_POST["username"];
 $password = $_POST["password"];
 $up = ucfirst($nama);
-$rt = $_POST["rt"];
-$rw = $_POST["rw"];
+$tempat_lahir = $_POST["tempat_lahir"];
+$tanggal_lahir = $_POST["tanggal_lahir"];
+$gender = $_POST["gender"];
+$agama = $_POST["agama"];
+$alamat = $_POST["alamat"];
 
 // memasukkan data kamar ke dalam database
-$update = mysqli_query($koneksi, "UPDATE tb_user SET username='$username', password='$password', nama_user='$nama', rt= $rt, rw= $rw WHERE tb_user.nik='$nik'");
+$update = mysqli_query($koneksi, "UPDATE tb_user SET username='$username', password='$password', nama_user='$nama', tempat_lahir= '$tempat_lahir', tanggal_lahir= '$tanggal_lahir', gender= '$gender', agama='$agama', alamat='$alamat' WHERE tb_user.nik='$nik'");
 // cek data berhasil di masukkan atau tidak
 if ($update) {
     header("location: ../admin/user.php");
