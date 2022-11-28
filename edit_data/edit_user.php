@@ -41,7 +41,7 @@ $nik = $tb_user["nik"]
           <div class="form-group row">
             <label for="input_nama_barang" class="col-sm-2 col-form-label">NIK</label>
             <div class="col-md-3">
-              <input type="text" class="form-control" name="nik" placeholder="Masukkan NIK" value="<?= $data['nik'] ?>" disabled>
+              <input type="number" class="form-control" name="nik" placeholder="Masukkan NIK" value="<?= $data['nik'] ?>" disabled>
               <input type="hidden" class="form-control" name="nik" placeholder="Masukkan NIK" value="<?= $data['nik'] ?>">
             </div>
           </div>
@@ -64,39 +64,50 @@ $nik = $tb_user["nik"]
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">Tempat Lahir</label>
+            <label for="" class="col-sm-2 col-form-label">Tempat Lahir</label>
             <div class="col-md-3">
               <input type="text" class="form-control" name="tempat_lahir" placeholder="Masukkan Tempat Lahir" value="<?= $data['tempat_lahir'] ?>">
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+            <label for="" class="col-sm-2 col-form-label">Tanggal Lahir</label>
             <div class="col-md-3">
               <input type="date" class="form-control" name="tanggal_lahir" placeholder="Masukkan Tanggal Lahir" value="<?= $data['tanggal_lahir'] ?>">
             </div>
           </div>
+
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+            <label for="" class="col-sm-2 col-form-label">Jenis Kelamin</label>
             <div class="col-md-3">
-              <input type="text" class="form-control" name="gender" placeholder="Pilih" value="<?= $data['gender'] ?>">
+              <select name="gender" id="gender" class="form-control" placeholder="Pilih Jenis Kelamin" value="<?= $data['gender'] ?>">
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">Agama</label>
+            <label for="" class="col-sm-2 col-form-label">Agama</label>
             <div class="col-md-3">
-              <input type="text" class="form-control" name="agama" placeholder="Pilih Agama" value="<?= $data['agama'] ?>">
+              <select name="agama" id="agama" class="form-control" placeholder="Pilih Agama" value="<?= $data['agama'] ?>">
+                <option value="Islam">Islam</option>
+                <option value="Kristen Protestan">Kristen Protestan</option>
+                <option value="Kristen Katolik">Kristen Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Konghucu">Konghucu</option>
+              </select>
             </div>
           </div>
           <div class="form-group row">
-            <label for="input_stock_barang" class="col-sm-2 col-form-label">Alamat</label>
+            <label for="" class="col-sm-2 col-form-label">Alamat</label>
             <div class="col-md-3">
               <input type="text" class="form-control" name="alamat" placeholder="Masukkan Alamat" value="<?= $data['alamat'] ?>">
             </div>
           </div>
           <div class="form-group row">
             <div class="col-sm-10">
-              <button type="submit" class="btn btn-primary" name="update_user">UPDATE</button>
-              <a href="../admin/user.php"><button type="button" class="btn btn-primary" name="batal">Batal</button></a>
+              <button type="submit" class="btn btn-primary" name="update_user">Update</button>
+              <a href="../admin/user.php"><button type="button" class="btn btn-danger" name="batal">Batal</button></a>
             </div>
           </div>
           <?php

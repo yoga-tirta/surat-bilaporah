@@ -103,7 +103,7 @@ $data = mysqli_query($koneksi, "SELECT * FROM tb_user where tb_user.username is 
           <div class="form-group row">
             <div class="col-sm-10">
               <button type="submit" class="btn btn-primary" name="tambah_data">Tambah</button>
-              <a href="../admin/user.php"><button type="button" class="btn btn-primary" name="batal">Batal</button></a>
+              <a href="../admin/user.php"><button type="button" class="btn btn-danger" name="batal">Batal</button></a>
             </div>
           </div>
           <?php
