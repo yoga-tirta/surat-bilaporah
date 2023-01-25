@@ -311,7 +311,7 @@ $nama = $tb_user["nama_user"];
                 </div>
             </div>
         </div>
-    </div>2
+    </div>
     <!-- Footer -->
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
